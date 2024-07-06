@@ -46,11 +46,7 @@ const Home = () => {
           <p className='text-[#7A7A7A] text-[14px]'>Customers.</p>
         </div>
         <div className="bg-slate-900 w-[470px] h-[250px] p-5 m-4 flex flex-col justify-center rounded-lg">
-          <p >Big Sales</p>
-          <p>Get an Extra</p>
-          <p>50% <span>Off</span></p>
-          <p>Promo Available for Regular</p>
-          <p>Customers.</p>
+         
         </div>
       </div>
 
