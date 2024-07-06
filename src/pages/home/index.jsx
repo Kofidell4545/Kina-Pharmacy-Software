@@ -3,6 +3,7 @@ import backgroundImage from '../../assets/background.jpg';
 import { BsTruck } from "react-icons/bs";
 import { CiCreditCard1 } from "react-icons/ci";
 import { BiSupport } from "react-icons/bi";
+import Elipse from '../../assets/Elipse.png'
 
 
 const icons = [
@@ -37,7 +38,7 @@ const Home = () => {
         ))}
       </div>
       {/**Promo card */}
-      <div className="flex flex-col lg:flex-row justify-center items-center p-2">
+      <div className="flex flex-col lg:flex-row md:flex-row justify-center items-center p-2">
         <div className="bg-[#DEE9FF] w-[470px] h-[250px] p-5 m-4 flex flex-col justify-center rounded-lg space-y-1">
           <p className=' font-bold text-[18px]'>Big Sales</p>
           <p className=' font-semibold text-[34px]' >Get an Extra</p>
@@ -45,10 +46,48 @@ const Home = () => {
           <p className='text-[#7A7A7A] text-[14px]'>Promo Available for Regular</p>
           <p className='text-[#7A7A7A] text-[14px]'>Customers.</p>
         </div>
-        <div className="bg-slate-900 w-[470px] h-[250px] p-5 m-4 flex flex-col justify-center rounded-lg">
-         
+        <div className="bg-slate-900 w-[470px] h-[250px] p-5 m-4 flex flex-col justify-between rounded-lg">
+          <div className="flex justify-between items-center">
+            <div>
+              <p className='text-[18px] text-white'>Take the discount for the first</p>
+              <p className='text-[18px] text-white' >shopping on our website</p>
+            </div>
+            <div>
+              <img src={Elipse} alt="logo" />
+            </div>
+          </div>
+          <div className="flex justify-start items-end h-full">
+            <p className="text-[40px] font-semibold text-white">30%</p>
+          </div>
         </div>
+
       </div>
+
+      {/**Feature section */}
+      <div className="p-6">
+  <div>
+    <p className="text-[20px] text-[#D64779] font-bold">Featured</p>
+  </div>
+  <div className="my-2">
+    <p className="text-[34px] font-semibold">Featured Pharmacy Essentials</p>
+  </div>
+  <div>
+    <div className="flex flex-col md:flex-row md:items-center justify-between">
+      <p className="text-[16px] text-[#7A7A7A] mb-4 md:mb-0 md:w-[768px] w-full">
+        Discover our featured pharmacy essentials, carefully selected to meet your everyday health and wellness needs. These essentials include:
+      </p>
+      <button className="bg-white text-black py-1 px-2 md:py-2 md:px-4   md:ml-4 border border-black w-24 md:w-auto">
+  All Products
+</button>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
 
 
 
