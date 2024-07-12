@@ -1,0 +1,22 @@
+.logo {
+    width: 150px;
+    height: 90px;
+}
+
+/* .navlink {
+    margin-right: 30px;
+} */
+
+/* .icons {
+    width: 20px;
+    filter: invert(100%);
+}
+
+.icons-mv {
+    width: 20px;
+    filter: invert(0%);
+} */
+
+.text-black:hover {
+    color: #7a7a7a;
+}
