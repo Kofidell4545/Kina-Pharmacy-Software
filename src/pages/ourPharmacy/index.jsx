@@ -25,14 +25,14 @@ const OurPharmacy = () => {
           <div className='category'>
             <h2>Categories</h2>
             <ul>
-              <li>Antibiotics </li>
-              <li>Dewormers</li>
-              <li>Stomach Upsets</li>
-              <li>Multivitamins</li>
-              <li>Blood Tonics</li>
-              <li>Malaria Drugs</li>
-              <li>Herbal Drugs</li>
-              <li>Cough and Cold Syrups</li>
+              <li><a href="">Antibiotics</a> </li>
+              <li><a href="">Dewormers</a></li>
+              <li><a href="">Stomach Upsets</a></li>
+              <li><a href="">Multivitamins</a></li>
+              <li><a href="">Blood Tonics</a></li>
+              <li><a href="">Malaria Drugs</a></li>
+              <li><a href="">Herbal Drugs</a></li>
+              <li><a href="">Cough and Cold Syrups</a></li>
             </ul>
           </div>
 
@@ -41,6 +41,7 @@ const OurPharmacy = () => {
 
           </div>
         </div>
+        <hr />
 
         {/* Recommended drugs and products */}
         <div className="recommended">

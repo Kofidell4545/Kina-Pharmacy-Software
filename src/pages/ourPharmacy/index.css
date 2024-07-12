@@ -26,6 +26,12 @@
     margin-bottom: 20px;
 }
 
+.category-drugs-main hr {
+    border: 1px solid #636363;
+    margin: auto;
+    width: 25%;
+}
+
 .search-filter {
     display: flex;
     justify-content: space-between;
@@ -47,12 +53,12 @@
 
 
 .category-drug {
-    margin-top: 15px;
+    margin: 20px 0 20px 0;
     display: flex;
 }
 
 .category-drug .category {
-    background-color: red;
+    background-color: rgb(201, 199, 199);
     width: 27vh;
     height: 60vh;
     padding: 10px;
