@@ -12,12 +12,26 @@
 
 .pharmacy-header {
     height: 45vh;
-    /* background-image:; */
-    background-color: aqua;
-    text-align: center;
+    background-image: url("../../assets/pharmacy-header-bg.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    font-size: 5rem;
+    text-align: center;
+    color: #fff; /* Ensure text color is white for better visibility on the background */
+}
+
+.pharmacy-header h1 {
+    font-size: 3rem; 
     font-weight: 900;
+    margin: 0; /* Remove default margin */
+}
+
+.pharmacy-header p {
+    font-size: 1.0rem; /* Adjust font size if needed */
+    margin: 0; /* Remove default margin */
 }
 
 .category-drugs-main {
@@ -27,7 +41,7 @@
 }
 
 .category-drugs-main hr {
-    border: 1px solid #636363;
+    border: 1px dashed #636363;
     margin: auto;
     width: 25%;
 }
@@ -51,6 +65,10 @@
     padding: 5px;
 }
 
+.filter button img {
+    margin-bottom: -7px;
+}
+
 
 .category-drug {
     margin: 20px 0 20px 0;
@@ -58,7 +76,7 @@
 }
 
 .category-drug .category {
-    background-color: rgb(201, 199, 199);
+    background-color: rgb(200, 200, 200);
     width: 27vh;
     height: 60vh;
     padding: 10px;
@@ -78,11 +96,12 @@
 }
 
 .category-drug .drugs {
-    background-color: aquamarine;
-    width: 100%;
+    background-color: rgb(235, 235, 235);
+    /* width: 170vh; */
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     margin: 0 0 0 40px;
+    padding: 20px 80px;
 }
 
 .recommended {
@@ -97,4 +116,52 @@
     padding: 20px;
     font-size: 1.7rem;
     font-weight: 700;
+}
+
+.drug-div {
+    border: 1px solid rgb(230, 230, 230);
+    margin: 10px;
+    background-color: #fff;
+    /* height: 270px; */
+    width: 200px;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.img-div img {
+    width: 170px;
+    height: 120px;
+    padding: 5px 8px;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 5px;
+}
+
+.price-avail-div {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Adjust gap as needed */
+}
+
+.in-stock {
+    color: green;
+}
+
+.out-of-stock {
+    color: red;
+}
+
+.view-btn {
+    margin-top: 50px;
+}
+
+.view-btn a {
+    border: 1px solid #000;
+    padding: 7px 60px 7px 60px;
+    transition: 0.3s ease-in-out;
+}
+
+.view-btn a:hover {
+    background-color: rgb(230, 230, 230);
 }
