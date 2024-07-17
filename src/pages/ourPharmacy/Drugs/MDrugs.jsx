@@ -1,103 +1,41 @@
-const Data = [
+// Drugs photos
+import Lufart0 from "../../../assets/drugs/Lufart0.jpg";
+import Lonart0 from "../../../assets/drugs/Lonart0.jpg";
+import Malar2_0 from "../../../assets/drugs/Malar2_0.webp";
+
+
+w
+const MalariaDrugsData = [
     {
         id: 0,
-        drugName: "",
+        drugName: "Lufart",
         description: "",
-        image0: require("../../../assets/drugs/"),
-        image1: require("../../../assets/drugs/"),
-        image2: require("../../../assets/drugs/"),
+        image0: Lufart0,
+        image1: "",
+        image2: "",
         inStock: true,
+        price: "GHS 100.00",
     },
     {
         id: 1,
-        drugName: "",
+        drugName: "Lonart",
         description: "",
-        image0: require("../../../assets/drugs/"),
-        image1: require("../../../assets/drugs/"),
-        image2: require("../../../assets/drugs/"),
+        image0: Lonart0,
+        image1: "",
+        image2: "",
         inStock: true,
+        price: "GHS 100.00",
     },
     {
         id: 2,
-        drugName: "",
+        drugName: "Malar 2",
         description: "",
-        image0: require("../../../assets/drugs/"),
-        image1: require("../../../assets/drugs/"),
-        image2: require("../../../assets/drugs/"),
+        image0: Malar2_0,
+        image1: "",
+        image2: "",
         inStock: true,
-    },
-    {
-        id: 3,
-        drugName: "",
-        description: "",
-        image0: require("../../../assets/drugs/"),
-        image1: require("../../../assets/drugs/"),
-        image2: require("../../../assets/drugs/"),
-        inStock: true,
-    },
-    {
-        id: 4,
-        drugName: "",
-        description: "",
-        image0: require("../../../assets/drugs/"),
-        image1: require("../../../assets/drugs/"),
-        image2: require("../../../assets/drugs/"),
-        inStock: true,
-    },
-    {
-        id: 5,
-        drugName: "",
-        description: "",
-        image0: require("../../../assets/drugs/"),
-        image1: require("../../../assets/drugs/"),
-        image2: require("../../../assets/drugs/"),
-        inStock: true,
-    },
-    {
-        id: 6,
-        drugName: "",
-        description: "",
-        image0: require("../../../assets/drugs/"),
-        image1: require("../../../assets/drugs/"),
-        image2: require("../../../assets/drugs/"),
-        inStock: true,
-    },
-    {
-        id: 7,
-        drugName: "",
-        description: "",
-        image0: require("../../../assets/drugs/"),
-        image1: require("../../../assets/drugs/"),
-        image2: require("../../../assets/drugs/"),
-        inStock: true,
-    },
-    {
-        id: 8,
-        drugName: "",
-        description: "",
-        image0: require("../../../assets/drugs/"),
-        image1: require("../../../assets/drugs/"),
-        image2: require("../../../assets/drugs/"),
-        inStock: true,
-    },
-    {
-        id: 9,
-        drugName: "",
-        description: "",
-        image0: require("../../../assets/drugs/"),
-        image1: require("../../../assets/drugs/"),
-        image2: require("../../../assets/drugs/"),
-        inStock: true,
-    },
-    {
-        id: 10,
-        drugName: "",
-        description: "",
-        image0: require("../../../assets/drugs/"),
-        image1: require("../../../assets/drugs/"),
-        image2: require("../../../assets/drugs/"),
-        inStock: true,
+        price: "GHS 100.00",
     },
 ];
 
-export default Data;
+export default MalariaDrugsData;
