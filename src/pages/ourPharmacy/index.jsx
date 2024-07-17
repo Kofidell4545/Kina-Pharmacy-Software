@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 // styles import
 import "./index.css"
@@ -9,10 +9,50 @@ import filter from "../../assets/icons/filter.png"
 // Categories names
 import Data from './Categories'
 
-// Antibiotic drugs imports
+// Drugs imports
 import AntibioticsData from './Drugs/Antibiotics'
+import BloodTonicsData from './Drugs/BTonics'
+import CoughSyrupsData from './Drugs/CCSyrups'
+import DewormersData from './Drugs/Dewormers'
+import HerbalDrugsData from './Drugs/HDrugs'
+import MalariaDrugsData from './Drugs/MDrugs'
+import MultivitaminsData from './Drugs/Multivitamins'
+import StomachUpsetsData from './Drugs/SUpsets'
+
 
 const OurPharmacy = () => {
+
+  const [selectedCategory, setSelectedCategory] = useState('Antibiotics');
+
+  const handleCategoryClick = (category) => {
+    setSelectedCategory(category);
+  };
+
+  const getDrugsByCategory = (category) => {
+    switch (category) {
+      case 'Antibiotics':
+        return AntibioticsData;
+      case 'BloodTonics':
+        return BloodTonicsData;
+      case 'ColdAndCoughSyrups':
+        return CoughSyrupsData;
+      case 'Dewormers':
+        return DewormersData;
+      case 'HerbalDrugs':
+        return HerbalDrugsData;
+      case 'MalariaDrugs':
+        return MalariaDrugsData;
+      case 'Multivitamins':
+        return MultivitaminsData;
+      case 'StomachUpsets':
+        return StomachUpsetsData;
+      default:
+        return [];
+    }
+  };
+
+  const drugsToDisplay = getDrugsByCategory(selectedCategory);
+
   return (
     <div className='main-div'>
       <div className="pharmacy-header">
@@ -36,8 +76,12 @@ const OurPharmacy = () => {
             <h2>Categories</h2>
             <ul>
               {Data.map(item => (
-                <li key={item.id}>
-                  <a href="">
+                <li 
+                  key={item.id}
+                  className={selectedCategory === item.category ? 'selected-category' : ''}
+                  onClick={() => handleCategoryClick(item.category)}
+                >
+                  <a href="#">
                     {item.category}
                   </a>
                 </li>
@@ -49,11 +93,11 @@ const OurPharmacy = () => {
           <div className="drugs">
             <table>
               <tbody>
-                {AntibioticsData.map((item, index) => {
+                {drugsToDisplay.map((item, index) => {
                   if (index % 5 === 0) {
                     return (
                       <tr key={index}>
-                        {AntibioticsData.slice(index, index + 5).map((drug) => (
+                        {drugsToDisplay.slice(index, index + 5).map((drug) => (
                           <td key={drug.id}>
                             <div className='drug-div'>
                               <div className='img-div'>
@@ -71,13 +115,13 @@ const OurPharmacy = () => {
                                 )}
                               </div>
                               <div className='view-btn'>
-                                <a href="">View</a>
+                                <a href="#">View</a>
                               </div>
                             </div>
                           </td>
                         ))}
                       </tr>
-                    )
+                    );
                   }
                   return null;
                 })}
