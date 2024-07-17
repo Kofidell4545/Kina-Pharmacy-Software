@@ -6,8 +6,16 @@ import "./index.css"
 // icond import
 import filter from "../../assets/icons/filter.png"
 
-// Categories names
-import Data from './Categories'
+const Categories = [
+  {id: 0, category: "Antibiotics"},
+  {id: 1, category: "Dewormers"},
+  {id: 2, category: "Stomach Upsets"},
+  {id: 3, category: "Multivitamins"},
+  {id: 4, category: "Blood Tonics"},
+  {id: 5, category: "Malaria Drugs"},
+  {id: 6, category: "Cough And Cold Syrups"},
+  {id: 7, category: "Herbal Drugs"},
+]
 
 // Drugs imports
 import AntibioticsData from './Drugs/Antibiotics'
@@ -73,9 +81,9 @@ const OurPharmacy = () => {
         {/* List of categories */}
         <div className='category-drug'>
           <div className='category'>
-            <h2>Categories</h2>
+            <h2><u>Categories</u></h2>
             <ul>
-              {Data.map(item => (
+              {Categories.map(item => (
                 <li 
                   key={item.id}
                   className={selectedCategory === item.category ? 'selected-category' : ''}
