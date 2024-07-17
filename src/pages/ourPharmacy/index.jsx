@@ -90,9 +90,7 @@ const OurPharmacy = () => {
                   className={selectedCategory === item.category ? 'selected-category' : ''}
                   onClick={() => handleCategoryClick(item.category)}
                 >
-                  <a href="#">
-                    {item.category}
-                  </a>
+                  {item.category}
                 </li>
               ))}
             </ul>
