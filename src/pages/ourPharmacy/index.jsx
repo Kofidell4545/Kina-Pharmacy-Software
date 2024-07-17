@@ -6,6 +6,7 @@ import "./index.css"
 // icond import
 import filter from "../../assets/icons/filter.png"
 
+// Drugs categories
 const Categories = [
   {id: 0, category: "Antibiotics"},
   {id: 1, category: "Dewormers"},
