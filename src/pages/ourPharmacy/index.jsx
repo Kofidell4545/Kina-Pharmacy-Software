@@ -32,19 +32,19 @@ const OurPharmacy = () => {
     switch (category) {
       case 'Antibiotics':
         return AntibioticsData;
-      case 'BloodTonics':
+      case 'Blood Tonics':
         return BloodTonicsData;
-      case 'ColdAndCoughSyrups':
+      case 'Cough And Cold Syrups':
         return CoughSyrupsData;
       case 'Dewormers':
         return DewormersData;
-      case 'HerbalDrugs':
+      case 'Herbal Drugs':
         return HerbalDrugsData;
-      case 'MalariaDrugs':
+      case 'Malaria Drugs':
         return MalariaDrugsData;
       case 'Multivitamins':
         return MultivitaminsData;
-      case 'StomachUpsets':
+      case 'Stomach Upsets':
         return StomachUpsetsData;
       default:
         return [];
