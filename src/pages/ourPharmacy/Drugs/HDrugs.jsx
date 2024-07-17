@@ -1,11 +1,11 @@
 // Drugs photos
 import Rooter0 from "../../../assets/drugs/Rooter0.png";
-import Mighty0 from "../../../assets/drugs/Mighty0.png";
+import Mighty0 from "../../../assets/drugs/Migthy0.png";
 import Imboost0 from "../../../assets/drugs/Imboost0.jpg";
 import Time0 from "../../../assets/drugs/Time0.png";
-import Tabea0 from "../../../assets/drugs/Tabea0.jpg";
-import Masada0 from "../../../assets/drugs/Masada0,png";
-import Omama0 from "../../../assets/drugs/Omama0";
+import Tabea0 from "../../../assets/drugs/Taabea0.jpg";
+import Masada0 from "../../../assets/drugs/Masada0.png";
+// import Omama0 from "../../../assets/drugs/Omama0";
 
 
 
@@ -44,7 +44,7 @@ const HerbalDrugsData = [
         id: 3,
         drugName: "Omama Misture",
         description: "",
-        image0: Omama0,
+        image0: "",
         image1: "",
         image2: "",
         inStock: true,

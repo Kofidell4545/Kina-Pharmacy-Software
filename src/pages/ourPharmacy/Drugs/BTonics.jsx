@@ -1,7 +1,7 @@
 // Drugs photos
 import Feroglobin0 from "../../../assets/drugs/Feroglobin0.jpg";
 import Durol0 from "../../../assets/drugs/Durol0.jpg";
-import Virol0 from "../../../assets/drugs/Virgil0.png";
+import Virol0 from "../../../assets/drugs/Virol0.webp";
 import Foligrow0 from "../../../assets/drugs/Foligrow1.png";
 import Zincofer0 from "../../../assets/drugs/Zincofer0.jpg";
 

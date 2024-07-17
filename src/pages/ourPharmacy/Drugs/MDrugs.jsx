@@ -4,7 +4,7 @@ import Lonart0 from "../../../assets/drugs/Lonart0.jpg";
 import Malar2_0 from "../../../assets/drugs/Malar2_0.webp";
 
 
-w
+
 const MalariaDrugsData = [
     {
         id: 0,
