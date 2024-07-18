@@ -3,10 +3,10 @@ import Apetamin0 from "../../../assets/drugs/Apetamin0.jpg";
 import Apetamin1 from "../../../assets/drugs/Apetamin1.webp";
 import Tres0 from "../../../assets/drugs/Tres-orix0.png";
 import Tres1 from "../../../assets/drugs/Tres-orix1.webp";
-import Tres2 from "../../../assets/drugs/Tres-orix0.webp";
-import Gudapest0 from "../../../assets/drugs/Gudapest0.jpg";
-import Gudapest1 from "../../../assets/drugs/Gudapest1.jpg";
-import Gudapest2 from "../../../assets/drugs/Gudapest2.jpg";
+import Tres2 from "../../../assets/drugs/Tres-orix2.webp";
+import Gudapet0 from "../../../assets/drugs/Gudapet0.jpg";
+import Gudapet1 from "../../../assets/drugs/Gudapet1.jpg";
+import Gudapet2 from "../../../assets/drugs/Gudapet2.jpg";
 import Cororange0 from "../../../assets/drugs/Cororange0.jpg";
 import Zincovit0 from "../../../assets/drugs/Zincovit0.jpg";
 import Zincovit1 from "../../../assets/drugs/Zincovit1.webp";
@@ -39,9 +39,9 @@ const MultivitaminsData = [
         id: 2,
         drugName: "Gudapet",
         description: "",
-        image0: Gudapest0,
-        image1: Gudapest1,
-        image2: Gudapest2,
+        image0: Gudapet0,
+        image1: Gudapet1,
+        image2: Gudapet2,
         inStock: true,
         price: "GHS 100.00",
     },
