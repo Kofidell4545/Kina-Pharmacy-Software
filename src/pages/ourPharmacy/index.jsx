@@ -3,8 +3,9 @@ import React, { useState } from 'react'
 // styles import
 import "./styles.css"
 
-// icond import
-import filter from "../../assets/icons/filter.png"
+// icons import
+import filter from "../../assets/icons/filter.png";
+import search from "../../assets/icons/search.png"
 
 // Drugs categories
 const Categories = [
