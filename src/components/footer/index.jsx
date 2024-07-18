@@ -3,7 +3,7 @@ import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 // styles
-import "../../components/header/index.css"
+import "../../components/header/styles.css"
 
 // logo import
 import logo from "../../assets/logo.png"
