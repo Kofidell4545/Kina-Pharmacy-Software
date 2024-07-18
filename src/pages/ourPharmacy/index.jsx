@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 // styles import
-import "./index.css"
+import "./styles.css"
 
 // icond import
 import filter from "../../assets/icons/filter.png"
