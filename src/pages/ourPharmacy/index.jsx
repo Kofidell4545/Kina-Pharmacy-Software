@@ -142,6 +142,9 @@ const OurPharmacy = () => {
         <div className="recommended">
           <h1>Recommended Drugs</h1>
         </div>   
+        <div className='recommended-drugs'>
+          
+        </div>
       </div>
     </div>
   )
