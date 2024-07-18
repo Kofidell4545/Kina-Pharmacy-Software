@@ -25,6 +25,8 @@ const CoughSyrupsData = [
         image2: "",
         inStock: true,
         price: "GHS 100.00",
+        whatItDoes: "",
+        keyComponents: "",
     },
     {
         id: 1,
@@ -35,6 +37,8 @@ const CoughSyrupsData = [
         image2: Stopkof2,
         inStock: true,
         price: "GHS 100.00",
+        whatItDoes: "",
+        keyComponents: "",
     },
     {
         id: 2,
@@ -45,6 +49,8 @@ const CoughSyrupsData = [
         image2: "",
         inStock: true,
         price: "GHS 100.00",
+        whatItDoes: "",
+        keyComponents: "",
     },
     {
         id: 3,
@@ -55,6 +61,8 @@ const CoughSyrupsData = [
         image2: Viscof2,
         inStock: true,
         price: "GHS 100.00",
+        whatItDoes: "",
+        keyComponents: "",
     },
     {
         id: 4,
@@ -65,6 +73,8 @@ const CoughSyrupsData = [
         image2: "",
         inStock: true,
         price: "GHS 100.00",
+        whatItDoes: "",
+        keyComponents: "",
     },
     {
         id: 5,
@@ -75,6 +85,8 @@ const CoughSyrupsData = [
         image2: "",
         inStock: true,
         price: "GHS 100.00",
+        whatItDoes: "",
+        keyComponents: "",
     },
 ];
 

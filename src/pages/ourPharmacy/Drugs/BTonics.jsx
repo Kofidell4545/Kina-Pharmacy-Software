@@ -22,6 +22,8 @@ const BloodTonicsData = [
         image2: Feroglobin2,
         inStock: true,
         price: "GHS 100.00",
+        whatItDoes: "",
+        keyComponents: "",
     },
     {
         id: 1,
@@ -32,6 +34,8 @@ const BloodTonicsData = [
         image2: Durol2,
         inStock: true,
         price: "GHS 100.00",
+        whatItDoes: "",
+        keyComponents: "",
     },
     {
         id: 2,
@@ -42,6 +46,8 @@ const BloodTonicsData = [
         image2: "",
         inStock: true,
         price: "GHS 100.00",
+        whatItDoes: "",
+        keyComponents: "",
     },
     {
         id: 3,
@@ -52,6 +58,8 @@ const BloodTonicsData = [
         image2: "",
         inStock: true,
         price: "GHS 100.00",
+        whatItDoes: "",
+        keyComponents: "",
     },
     {
         id: 4,
@@ -62,6 +70,8 @@ const BloodTonicsData = [
         image2: "",
         inStock: true,
         price: "GHS 100.00",
+        whatItDoes: "",
+        keyComponents: "",
     },
 ];
 

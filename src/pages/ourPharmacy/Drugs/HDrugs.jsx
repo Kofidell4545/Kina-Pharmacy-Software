@@ -26,6 +26,8 @@ const HerbalDrugsData = [
         image2: "",
         inStock: true,
         price: "GHS 100.00",
+        whatItDoes: "",
+        keyComponents: "",
     },
     {
         id: 1,
@@ -36,6 +38,8 @@ const HerbalDrugsData = [
         image2: "",
         inStock: true,
         price: "GHS 100.00",
+        whatItDoes: "",
+        keyComponents: "",
     },
     {
         id: 2,
@@ -46,6 +50,8 @@ const HerbalDrugsData = [
         image2: Tabea2,
         inStock: true,
         price: "GHS 100.00",
+        whatItDoes: "",
+        keyComponents: "",
     },
     {
         id: 3,
@@ -56,6 +62,8 @@ const HerbalDrugsData = [
         image2: "",
         inStock: true,
         price: "GHS 100.00",
+        whatItDoes: "",
+        keyComponents: "",
     },
     {
         id: 4,
@@ -66,6 +74,8 @@ const HerbalDrugsData = [
         image2: "",
         inStock: true,
         price: "GHS 100.00",
+        whatItDoes: "",
+        keyComponents: "",
     },
     {
         id: 5,
@@ -76,6 +86,8 @@ const HerbalDrugsData = [
         image2: "",
         inStock: true,
         price: "GHS 100.00",
+        whatItDoes: "",
+        keyComponents: "",
     },
     {
         id: 6,
@@ -86,6 +98,8 @@ const HerbalDrugsData = [
         image2: "",
         inStock: true,
         price: "GHS 100.00",
+        whatItDoes: "",
+        keyComponents: "",
     },
 ];
 

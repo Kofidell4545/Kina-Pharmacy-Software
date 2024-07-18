@@ -23,6 +23,8 @@ const DewormersData = [
         image2: Wormplex2,
         inStock: true,
         price: "GHS 100.00",
+        whatItDoes: "",
+        keyComponents: "",
     },
     {
         id: 1,
@@ -33,6 +35,8 @@ const DewormersData = [
         image2: Zentel2,
         inStock: true,
         price: "GHS 100.00",
+        whatItDoes: "",
+        keyComponents: "",
     },
     {
         id: 2,
@@ -43,6 +47,8 @@ const DewormersData = [
         image2: "",
         inStock: true,
         price: "GHS 100.00",
+        whatItDoes: "",
+        keyComponents: "",
     },
     {
         id: 3,
@@ -53,17 +59,21 @@ const DewormersData = [
         image2: Tanzol2,
         inStock: true,
         price: "GHS 100.00",
+        whatItDoes: "",
+        keyComponents: "",
     },
-    // {
-    //     id: 4,
-    //     drugName: "Bense's",
-    //     description: "",
-    //     image0: ,
-    //     image1: "",
-    //     image2: "",
-    //     inStock: true,
-    //     price: "GHS 100.00",
-    // },
+    {
+        id: 4,
+        drugName: "Bense's",
+        description: "",
+        image0: "",
+        image1: "",
+        image2: "",
+        inStock: true,
+        price: "GHS 100.00",
+        whatItDoes: "",
+        keyComponents: "",
+    },
 ];
 
 export default DewormersData;

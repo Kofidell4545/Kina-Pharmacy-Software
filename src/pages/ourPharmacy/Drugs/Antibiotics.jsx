@@ -21,6 +21,8 @@ const AntibioticsData = [
         image2: '',
         inStock: true,
         price: "GHS 100.00",
+        whatItDoes: "",
+        keyComponents: "",
     },
     {
         id: 1,
@@ -31,6 +33,8 @@ const AntibioticsData = [
         image2: '',
         inStock: true,
         price: "GHS 100.00",
+        whatItDoes: "",
+        keyComponents: "",
     },
     {
         id: 2,
@@ -41,6 +45,8 @@ const AntibioticsData = [
         image2: '',
         inStock: true,
         price: "GHS 100.00",
+        whatItDoes: "",
+        keyComponents: "",
     },
     {
         id: 3,
@@ -51,6 +57,8 @@ const AntibioticsData = [
         image2: '',
         inStock: true,
         price: "GHS 100.00",
+        whatItDoes: "",
+        keyComponents: "",
     },
     {
         id: 4,
@@ -61,6 +69,8 @@ const AntibioticsData = [
         image2: '',
         inStock: true,
         price: "GHS 100.00",
+        whatItDoes: "",
+        keyComponents: "",
     },
     {
         id: 5,
@@ -71,6 +81,8 @@ const AntibioticsData = [
         image2: '',
         inStock: true,
         price: "GHS 100.00",
+        whatItDoes: "",
+        keyComponents: "",
     },
     {
         id: 6,
@@ -81,6 +93,8 @@ const AntibioticsData = [
         image2: '',
         inStock: true,
         price: "GHS 100.00",
+        whatItDoes: "",
+        keyComponents: "",
     },
     {
         id: 7,
@@ -91,6 +105,8 @@ const AntibioticsData = [
         image2: '',
         inStock: true,
         price: "GHS 100.00",
+        whatItDoes: "",
+        keyComponents: "",
     },
     {
         id: 8,
@@ -101,6 +117,8 @@ const AntibioticsData = [
         image2: '',
         inStock: true,
         price: "GHS 100.00",
+        whatItDoes: "",
+        keyComponents: "",
     },
     {
         id: 9,
@@ -111,6 +129,8 @@ const AntibioticsData = [
         image2: '',
         inStock: true,
         price: "GHS 100.00",
+        whatItDoes: "",
+        keyComponents: "",
     },
     {
         id: 10,
@@ -121,6 +141,8 @@ const AntibioticsData = [
         image2: '',
         inStock: true,
         price: "GHS 100.00",
+        whatItDoes: "",
+        keyComponents: "",
     },
 ];
 
