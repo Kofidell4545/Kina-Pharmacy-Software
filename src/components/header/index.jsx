@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { Link, NavLink } from 'react-router-dom';
 
-import "./index.css";
+import "./styles.css";
 
 // Logo import
 import logo from "../../assets/logo.png";
