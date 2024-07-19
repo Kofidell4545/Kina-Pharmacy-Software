@@ -12,7 +12,7 @@
 
 .pharmacy-header {
     height: 45vh;
-    background-image: url("../../assets/pharmacy-header-bg.png");
+    background-image: url("../../assets/utils/pharmacy-header-bg.png");
     background-size: cover;
     background-position: center;
     display: flex;
