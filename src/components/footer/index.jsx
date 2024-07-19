@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import "../../components/header/styles.css"
 
 // logo import
-import logo from "../../assets/logo.png"
+import logo from "../../assets/utils/logo.png"
 
 const sections = [
   { title: "Home", path: "/" },
