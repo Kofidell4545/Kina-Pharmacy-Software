@@ -1,13 +1,24 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 // styles import
-import "./styles.css"
+import "./styles.css";
 
 // icons import
 import filter from "../../assets/icons/filter.png";
-import search from "../../assets/icons/search.png"
+import search from "../../assets/icons/search.png";
 
-// Drugs categories
+// Drugs categories and imports
+import AntibioticsData from './Drugs/Antibiotics';
+import BloodTonicsData from './Drugs/BTonics';
+import CoughSyrupsData from './Drugs/CCSyrups';
+import DewormersData from './Drugs/Dewormers';
+import HerbalDrugsData from './Drugs/HDrugs';
+import MalariaDrugsData from './Drugs/MDrugs';
+import MultivitaminsData from './Drugs/Multivitamins';
+import StomachUpsetsData from './Drugs/SUpsets';
+
 const Categories = [
   {id: 0, category: "Antibiotics"},
   {id: 1, category: "Dewormers"},
@@ -17,22 +28,9 @@ const Categories = [
   {id: 5, category: "Malaria Drugs"},
   {id: 6, category: "Cough And Cold Syrups"},
   {id: 7, category: "Herbal Drugs"},
-]
-
-// Drugs imports
-import AntibioticsData from './Drugs/Antibiotics'
-import BloodTonicsData from './Drugs/BTonics'
-import CoughSyrupsData from './Drugs/CCSyrups'
-import DewormersData from './Drugs/Dewormers'
-import HerbalDrugsData from './Drugs/HDrugs'
-import MalariaDrugsData from './Drugs/MDrugs'
-import MultivitaminsData from './Drugs/Multivitamins'
-import StomachUpsetsData from './Drugs/SUpsets'
-import { Link } from 'react-router-dom';
-
+];
 
 const OurPharmacy = () => {
-
   const [selectedCategory, setSelectedCategory] = useState('Antibiotics');
 
   const handleCategoryClick = (category) => {
@@ -101,42 +99,50 @@ const OurPharmacy = () => {
 
           {/* The drug under the category clicked should appear here */}
           <div className="drugs">
-            <table>
-              <tbody>
-                {drugsToDisplay.map((item, index) => {
-                  if (index % 5 === 0) {
-                    return (
-                      <tr key={index}>
-                        {drugsToDisplay.slice(index, index + 5).map((drug) => (
-                          <td key={drug.id}>
-                            <div className='drug-div'>
-                              <div className='img-div'>
-                                <img src={drug.image0} alt={drug.drugName} />
+            <motion.div
+              key={selectedCategory}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <table>
+                <tbody>
+                  {drugsToDisplay.map((item, index) => {
+                    if (index % 5 === 0) {
+                      return (
+                        <tr key={index}>
+                          {drugsToDisplay.slice(index, index + 5).map((drug) => (
+                            <td key={drug.id}>
+                              <div className='drug-div'>
+                                <div className='img-div'>
+                                  <img src={drug.image0} alt={drug.drugName} />
+                                </div>
+                                <div className="drug-name">
+                                  <span>{drug.drugName}</span>
+                                </div>
+                                <div className='price-avail-div'>
+                                  <span>{drug.price}</span>
+                                  {drug.inStock ? (
+                                    <span className='in-stock'>In Stock</span>
+                                  ) : (
+                                    <span className='out-of-stock'>Out of Stock</span>
+                                  )}
+                                </div>
+                                <div className='view-btn'>
+                                  <Link className='link' to={`/our-pharmacy/${selectedCategory}/${drug.id}`}>View</Link>
+                                </div>
                               </div>
-                              <div className="drug-name">
-                                <span>{drug.drugName}</span>
-                              </div>
-                              <div className='price-avail-div'>
-                                <span>{drug.price}</span>
-                                {drug.inStock ? (
-                                  <span className='in-stock'>In Stock</span>
-                                ) : (
-                                  <span className='out-of-stock'>Out of Stock</span>
-                                )}
-                              </div>
-                              <div className='view-btn'>
-                              <Link className='link' to={`/our-pharmacy/${selectedCategory}/${drug.id}`}>View</Link>
-                              </div>
-                            </div>
-                          </td>
-                        ))}
-                      </tr>
-                    );
-                  }
-                  return null;
-                })}
-              </tbody>
-            </table>
+                            </td>
+                          ))}
+                        </tr>
+                      );
+                    }
+                    return null;
+                  })}
+                </tbody>
+              </table>
+            </motion.div>
           </div>
         </div>
         <hr />
@@ -150,7 +156,7 @@ const OurPharmacy = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default OurPharmacy
+export default OurPharmacy;
