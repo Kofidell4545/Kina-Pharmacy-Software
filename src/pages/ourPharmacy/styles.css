@@ -49,13 +49,23 @@
 .search-filter {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .search input {
     width: 210px;
     height: 40px;
     border: 1px solid #000;
-    padding-left: 10px;
+    padding: 10px 30px 10px 10px;
+}
+
+.search .search-icon {
+    position: absolute;
+    left: 200px;
+    top: 68%;
+    transform: translateY(-230%);
+    width: 20px; /* Adjust width as needed */
+    height: 20px; /* Adjust height as needed */
 }
 
 .filter {
@@ -63,6 +73,12 @@
     height: 40px;
     border: 1px solid #000;
     padding: 5px;
+    /* margin-top: -10px; */
+}
+
+.filter button {
+    background: none;
+    border: none;
 }
 
 .filter button img {
@@ -73,6 +89,7 @@
 .category-drug {
     margin: 20px 0 20px 0;
     display: flex;
+    /* flex-wrap: wrap; */
 }
 
 .category-drug .category {
@@ -105,35 +122,40 @@
     background-color: rgb(235, 235, 235);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    margin: 0 0 0 40px;
-    padding: 20px 80px;
-    width: 100%;
+    flex: 3;
+    padding: 20px;
+    margin-left: 20px;
 }
 
-.recommended {
-    height: 50vh;
+.drugs table {
     width: 100%;
+    border-collapse: collapse;
+}
+
+.drugs td {
+    padding: 10px;
+}
+
+
+.recommended {
+    padding: 20px;
     background-color: bisque;
     margin-top: 20px;
 }
 
 .recommended h1 {
     text-align: center;
-    padding: 20px;
     font-size: 1.7rem;
     font-weight: 700;
 }
 
 .drug-div {
     border: 1px solid rgb(230, 230, 230);
-    margin: 10px;
     background-color: #fff;
-    /* height: 270px; */
-    width: 200px;
     text-align: center;
-    align-items: center;
     padding: 20px;
     border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 .img-div img {
@@ -147,7 +169,7 @@
 .price-avail-div {
     display: flex;
     align-items: center;
-    gap: 15px; /* Adjust gap as needed */
+    gap: 30px; /* Adjust gap as needed */
 }
 
 .in-stock {
@@ -159,12 +181,13 @@
 }
 
 .view-btn {
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
-.view-btn a {
+.view-btn .link {
+    display: inline-block;
     border: 1px solid #000;
-    padding: 7px 60px 7px 60px;
+    padding: 7px 20px;
     transition: 0.3s ease-in-out;
 }
 
@@ -176,18 +199,111 @@
 
 
 
+/* Responsive Styles */
 @media only screen and (max-width: 768px) {
-    .search input {
-        width: 170px;
+    .pharmacy-header {
+        padding: 20px;
+    }
+
+    .pharmacy-header h1 {
+        font-size: 2rem;
+    }
+
+    .pharmacy-header p {
+        font-size: 0.9rem;
+    }
+
+    .category-drugs-main {
+        padding: 10px;
+    }
+
+    .category-drug {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .category-drug .category {
-        width: 25vh;
+        width: 100%;
+        max-width: none;
+        border-radius: 10px;
     }
 
     .category-drug .drugs {
-        margin: 0 0 0 20px;
-        padding: 20px 50px;
-        width: 550px;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+        padding: 10px 30px;
+    }
+
+    .search-filter {
+        flex-direction: row;
+    }
+
+    .search .search-icon {
+        transform: translateY(-215%);
+    }
+
+    .filter {
+        margin-left: 0;
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .category {
+        border-radius: 10px;
+    }
+
+    .pharmacy-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .pharmacy-header p {
+        font-size: 0.8rem;
+    }
+
+    .drugs td {
+        padding: 5px;
+    }
+
+    .drug-div {
+        padding: 5px;
+        width: 170px;
+    }
+
+    .view-btn {
+        margin: 40px 0 5px 0;
+    }
+
+    .view-btn a {
+        padding: 5px 10px;
+    }
+    
+
+    .search-icon {
+        margin-top: -40px;
+    }
+
+    .category-drug .drugs {
+        padding: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .drugs td {
+        padding: 5px;
+    }
+
+    .drug-div {
+        padding: 2px;
+        width: 150px;
+    }
+
+    .view-btn {
+        margin: 20px 0 5px 0;
+    }
+
+    .view-btn a {
+        padding: 3px 10px;
     }
 }

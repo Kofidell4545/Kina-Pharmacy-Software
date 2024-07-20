@@ -28,6 +28,7 @@ import HerbalDrugsData from './Drugs/HDrugs'
 import MalariaDrugsData from './Drugs/MDrugs'
 import MultivitaminsData from './Drugs/Multivitamins'
 import StomachUpsetsData from './Drugs/SUpsets'
+import { Link } from 'react-router-dom';
 
 
 const OurPharmacy = () => {
@@ -74,6 +75,7 @@ const OurPharmacy = () => {
         <div className="search-filter">
           <div className='search'>
             <input type="text" placeholder='Search' />
+            <img src={search} alt="search" className='search-icon' />
           </div>
           <div className='filter'>
             <span>Filter <button><img src={filter} alt="" /></button></span>
@@ -123,7 +125,7 @@ const OurPharmacy = () => {
                                 )}
                               </div>
                               <div className='view-btn'>
-                                <a href="#">View</a>
+                              <Link className='link' to={`/our-pharmacy/${selectedCategory}/${drug.id}`}>View</Link>
                               </div>
                             </div>
                           </td>
