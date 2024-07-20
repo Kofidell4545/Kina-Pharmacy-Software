@@ -7,7 +7,8 @@ import About from './pages/about';
 import Contact from './pages/contact';
 import Education from './pages/education';
 import OurPharmacy from './pages/ourPharmacy';
-import DrugDetails from './pages/drugDetails';  // Import the DrugDetails component
+import DrugDetails from './pages/drugDetails';
+
 
 const router = createBrowserRouter([
   {
