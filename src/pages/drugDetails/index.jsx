@@ -55,13 +55,27 @@ const DrugDetails = () => {
           <p>{drug.description}</p>
         </div>
         <div className="drug-images">
-          <img src={drug.image0} alt={drug.drugName} />
+          {drug.image0 && <img src={drug.image0} alt={`${drug.drugName} Image 1`} />}
+          {drug.image1 && <img src={drug.image1} alt={`${drug.drugName} Image 2`} />}
+          {drug.image2 && <img src={drug.image2} alt={`${drug.drugName} Image 3`} />}
         </div>
         <div className="drug-info">
           <h3>What it does</h3>
-          <p>{drug.uses}</p>
+          <ul>
+            {drug.uses.map((use, index) => (
+              <li key={index}>{use}</li>
+            ))}
+          </ul>
           <h3>Key components</h3>
-          <p>{drug.components}</p>
+          <ul>
+            {drug.keyComponents.map((component, index) => (
+              <li key={index}>{component}</li>
+            ))}
+          </ul>
+          <div className="price-stock">
+            <span>{drug.price}</span>
+            {drug.inStock ? <span className="in-stock">In Stock</span> : <span className="out-of-stock">Out of Stock</span>}
+          </div>
         </div>
       </div>
     </div>
