@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 // Styles import
@@ -16,7 +16,8 @@ import StomachUpsetsData from '../ourPharmacy/Drugs/SUpsets';
 
 const DrugDetails = () => {
   const { id, category } = useParams();
-  
+  const [selectedImage, setSelectedImage] = useState(null);
+
   const getDrugsByCategory = (category) => {
     switch (category) {
       case 'Antibiotics':
@@ -42,6 +43,7 @@ const DrugDetails = () => {
 
   const drugs = getDrugsByCategory(category);
   const drug = drugs.find(d => d.id === parseInt(id));
+  const defaultImage = drug ? drug.image0 || drug.image1 || drug.image2 : null;
 
   if (!drug) {
     return <div>Drug not found</div>;
@@ -49,32 +51,78 @@ const DrugDetails = () => {
 
   return (
     <div className="drug-details">
-      <h1>{drug.drugName}</h1>
       <div className="drug-details-content">
-        <div className="drug-description">
-          <p>{drug.description}</p>
-        </div>
-        <div className="drug-images">
-          {drug.image0 && <img src={drug.image0} alt={`${drug.drugName} Image 1`} />}
-          {drug.image1 && <img src={drug.image1} alt={`${drug.drugName} Image 2`} />}
-          {drug.image2 && <img src={drug.image2} alt={`${drug.drugName} Image 3`} />}
-        </div>
-        <div className="drug-info">
-          <h3>What it does</h3>
-          <ul>
-            {drug.uses.map((use, index) => (
-              <li key={index}>{use}</li>
-            ))}
-          </ul>
-          <h3>Key components</h3>
-          <ul>
-            {drug.keyComponents.map((component, index) => (
-              <li key={index}>{component}</li>
-            ))}
-          </ul>
-          <div className="price-stock">
-            <span>{drug.price}</span>
-            {drug.inStock ? <span className="in-stock">In Stock</span> : <span className="out-of-stock">Out of Stock</span>}
+
+        <div className="drug-info-section">
+          <div className="drug-main-info">
+            <h1>{drug.drugName}</h1>
+            <p>{drug.description}</p>
+          </div>
+
+          <div className="drug-images-section">
+            <div className="main-image">
+              <img src={selectedImage || defaultImage} alt={drug.drugName} />
+            </div>
+            
+            <div className="thumbnail-images">
+              <table>
+                <tr>
+                  <td>
+                    {drug.image0 && (
+                      <img
+                        src={drug.image0}
+                        alt={`${drug.drugName} Thumbnail 1`}
+                        onClick={() => setSelectedImage(drug.image0)}
+                        className={selectedImage === drug.image0 ? 'selected-thumbnail' : ''}
+                      />
+                    )}
+                  </td>
+                  <td>
+                    {drug.image1 && (
+                      <img
+                        src={drug.image1}
+                        alt={`${drug.drugName} Thumbnail 2`}
+                        onClick={() => setSelectedImage(drug.image1)}
+                        className={selectedImage === drug.image1 ? 'selected-thumbnail' : ''}
+                      />
+                    )}
+                  </td>
+                  <td>
+                    {drug.image2 && (
+                      <img
+                        src={drug.image2}
+                        alt={`${drug.drugName} Thumbnail 3`}
+                        onClick={() => setSelectedImage(drug.image2)}
+                        className={selectedImage === drug.image2 ? 'selected-thumbnail' : ''}
+                      />
+                    )}
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div className="drug-details-info">
+            <h3>What it does</h3>
+            <ul>
+              {drug.uses.map((use, index) => (
+                <li key={index}>{use}</li>
+              ))}
+            </ul>
+            <h3>Key components</h3>
+            <ul>
+              {drug.keyComponents.map((component, index) => (
+                <li key={index}>{component}</li>
+              ))}
+            </ul>
+            <div className="price-stock">
+              <span>{drug.price}</span>
+              {drug.inStock ? (
+                <span className="in-stock">In Stock</span>
+              ) : (
+                <span className="out-of-stock">Out of Stock</span>
+              )}
+            </div>
           </div>
         </div>
       </div>
