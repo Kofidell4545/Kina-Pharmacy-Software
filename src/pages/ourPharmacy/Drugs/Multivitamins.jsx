@@ -24,8 +24,17 @@ const MultivitaminsData = [
         image2: "",
         inStock: true,
         price: "GHS 100.00",
-        whatItDoes: "",
-        keyComponents: "",
+        uses: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        keyComponents: [
+            "",
+            "",
+            "",
+        ],
     },
     {
         id: 1,
@@ -36,8 +45,17 @@ const MultivitaminsData = [
         image2: Tres2,
         inStock: true,
         price: "GHS 100.00",
-        whatItDoes: "",
-        keyComponents: "",
+        uses: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        keyComponents: [
+            "",
+            "",
+            "",
+        ],
     },
     {
         id: 2,
@@ -48,8 +66,17 @@ const MultivitaminsData = [
         image2: Gudapet2,
         inStock: true,
         price: "GHS 100.00",
-        whatItDoes: "",
-        keyComponents: "",
+        uses: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        keyComponents: [
+            "",
+            "",
+            "",
+        ],
     },
     {
         id: 3,
@@ -60,8 +87,17 @@ const MultivitaminsData = [
         image2: "",
         inStock: true,
         price: "GHS 100.00",
-        whatItDoes: "",
-        keyComponents: "",
+        uses: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        keyComponents: [
+            "",
+            "",
+            "",
+        ],
     },
     {
         id: 4,
@@ -72,8 +108,17 @@ const MultivitaminsData = [
         image2: Zincovit2,
         inStock: true,
         price: "GHS 100.00",
-        whatItDoes: "",
-        keyComponents: "",
+        uses: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        keyComponents: [
+            "",
+            "",
+            "",
+        ],
     },
 ];
 

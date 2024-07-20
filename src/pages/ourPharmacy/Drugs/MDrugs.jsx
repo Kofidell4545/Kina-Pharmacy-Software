@@ -18,8 +18,17 @@ const MalariaDrugsData = [
         image2: "",
         inStock: true,
         price: "GHS 100.00",
-        whatItDoes: "",
-        keyComponents: "",
+        uses: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        keyComponents: [
+            "",
+            "",
+            "",
+        ],
     },
     {
         id: 1,
@@ -30,8 +39,17 @@ const MalariaDrugsData = [
         image2: Lonart2,
         inStock: true,
         price: "GHS 100.00",
-        whatItDoes: "",
-        keyComponents: "",
+        uses: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        keyComponents: [
+            "",
+            "",
+            "",
+        ],
     },
     {
         id: 2,
@@ -42,8 +60,17 @@ const MalariaDrugsData = [
         image2: "",
         inStock: true,
         price: "GHS 100.00",
-        whatItDoes: "",
-        keyComponents: "",
+        uses: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        keyComponents: [
+            "",
+            "",
+            "",
+        ],
     },
 ];
 

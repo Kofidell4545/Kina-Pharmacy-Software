@@ -25,8 +25,17 @@ const StomachUpsetsData = [
         image2: "",
         inStock: true,
         price: "GHS 100.00",
-        whatItDoes: "",
-        keyComponents: "",
+        uses: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        keyComponents: [
+            "",
+            "",
+            "",
+        ],
     },
     {
         id: 1,
@@ -37,8 +46,17 @@ const StomachUpsetsData = [
         image2: Magacid2,
         inStock: true,
         price: "GHS 100.00",
-        whatItDoes: "",
-        keyComponents: "",
+        uses: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        keyComponents: [
+            "",
+            "",
+            "",
+        ],
     },
     {
         id: 2,
@@ -49,8 +67,17 @@ const StomachUpsetsData = [
         image2: "",
         inStock: true,
         price: "GHS 100.00",
-        whatItDoes: "",
-        keyComponents: "",
+        uses: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        keyComponents: [
+            "",
+            "",
+            "",
+        ],
     },
     {
         id: 3,
@@ -61,8 +88,17 @@ const StomachUpsetsData = [
         image2: MoM2,
         inStock: true,
         price: "GHS 100.00",
-        whatItDoes: "",
-        keyComponents: "",
+        uses: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        keyComponents: [
+            "",
+            "",
+            "",
+        ],
     },
     {
         id: 4,
@@ -73,8 +109,17 @@ const StomachUpsetsData = [
         image2: "",
         inStock: true,
         price: "GHS 100.00",
-        whatItDoes: "",
-        keyComponents: "",
+        uses: [
+            "",
+            "",
+            "",
+            "",
+        ],
+        keyComponents: [
+            "",
+            "",
+            "",
+        ],
     },
 ];
 
