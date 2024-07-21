@@ -52,28 +52,57 @@
     flex-wrap: wrap;
 }
 
-.search input {
+.search {
     width: 210px;
+    border: 1px solid;
     height: 40px;
-    border: 1px solid #000;
-    padding: 10px 30px 10px 10px;
+    border-radius: 5px;
 }
 
-.search .search-icon {
+.search input {
+    width: 150px;
+    height: 38px;
+    border: none;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+/* .search input:active {
+    border: none;
+} */
+
+.search button {
+    border: none;
+    margin-left: 1.4px;
+    background-color: #abc3a2;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #5b5a5a;
+    padding: 5px;
+    height: 38.5px;
+    transition: 0.3s ease-in-out;
+}
+
+.search button:hover {
+    background-color: #c7debe;
+}
+
+/* .search .search-icon {
     position: absolute;
     left: 200px;
     top: 68%;
     transform: translateY(-230%);
-    width: 20px; /* Adjust width as needed */
-    height: 20px; /* Adjust height as needed */
-}
+    width: 20px;
+    height: 20px; 
+} */
 
 .filter {
     width: 80px;
     height: 40px;
     border: 1px solid #000;
     padding: 5px;
-    /* margin-top: -10px; */
+    border-radius: 5px;
 }
 
 .filter button {
@@ -115,7 +144,9 @@
 }
 
 .category li.selected-category {
-    background-color: #baceb2; /* Highlight color for selected category */
+    background-color: #abc3a2; /* Highlight color for selected category */
+    padding: 3px;
+    border-radius: 5px;
 }
 
 .category-drug .drugs {
@@ -170,7 +201,7 @@
 .price-avail-div {
     display: flex;
     align-items: center;
-    gap: 30px; /* Adjust gap as needed */
+    gap: 20px; /* Adjust gap as needed */
 }
 
 .in-stock {
@@ -188,12 +219,13 @@
 .view-btn .link {
     display: inline-block;
     border: 1px solid #000;
+    border-radius: 5px;
     padding: 7px 30px;
     transition: 0.3s ease-in-out;
 }
 
 .view-btn a:hover {
-    background-color: rgb(230, 230, 230);
+    background-color: #c4dac0;
 }
 
 
@@ -233,6 +265,9 @@
     .category-drug .drugs {
         width: 100%;
         margin: 20px 0;
+        border-radius: 10px;
+        flex: 3;
+        flex-direction: column;
     }
 
     .search-filter {
@@ -240,13 +275,13 @@
     }
 
     .search .search-icon {
-        transform: translateY(-15%);
+        transform: translateY(-220%);
     }
 
-    .filter {
+    /* .filter {
         margin-left: 0;
         margin-top: 0;
-    }
+    } */
 }
 
 @media only screen and (max-width: 480px) {
@@ -255,12 +290,28 @@
         font-size: 0.9rem;
     }
 
+    .pharmacy-header {
+        height: 35vh;
+    }
+
     .pharmacy-header h1 {
         font-size: 1.5rem;
     }
 
     .pharmacy-header p {
         font-size: 0.8rem;
+    }
+
+    .search {
+        width: 180px;
+    }
+    
+    .search input {
+        width: 120px;
+    }
+
+    .search button:active {
+        background-color: #c7debe;
     }
 
     .category-drug .drugs {
@@ -296,9 +347,21 @@
     }
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 392px) {
     .search-filter {
         font-size: 1rem;
+    }
+
+    .search {
+        width: 170px;
+    }
+    
+    .search input {
+        width: 110px;
+        padding: 5px;
+    }
+    .search button:active {
+        background-color: #c7debe;
     }
 
     .drugs {

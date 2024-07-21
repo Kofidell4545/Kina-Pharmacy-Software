@@ -7,9 +7,8 @@ import "./styles.css";
 
 // icons import
 import filter from "../../assets/icons/filter.png";
-import search from "../../assets/icons/search.png";
 
-// Drugs categories and imports
+// Drugs imports
 import AntibioticsData from './Drugs/Antibiotics';
 import BloodTonicsData from './Drugs/BTonics';
 import CoughSyrupsData from './Drugs/CCSyrups';
@@ -20,21 +19,51 @@ import MultivitaminsData from './Drugs/Multivitamins';
 import StomachUpsetsData from './Drugs/SUpsets';
 
 const Categories = [
-  {id: 0, category: "Antibiotics"},
-  {id: 1, category: "Dewormers"},
-  {id: 2, category: "Stomach Upsets"},
-  {id: 3, category: "Multivitamins"},
-  {id: 4, category: "Blood Tonics"},
-  {id: 5, category: "Malaria Drugs"},
-  {id: 6, category: "Cough And Cold Syrups"},
-  {id: 7, category: "Herbal Drugs"},
+  { id: 0, category: "Antibiotics" },
+  { id: 1, category: "Dewormers" },
+  { id: 2, category: "Stomach Upsets" },
+  { id: 3, category: "Multivitamins" },
+  { id: 4, category: "Blood Tonics" },
+  { id: 5, category: "Malaria Drugs" },
+  { id: 6, category: "Cough And Cold Syrups" },
+  { id: 7, category: "Herbal Drugs" },
 ];
 
 const OurPharmacy = () => {
   const [selectedCategory, setSelectedCategory] = useState('Antibiotics');
+  const [searchQuery, setSearchQuery] = useState('');
+  const [searchedDrug, setSearchedDrug] = useState(null);
+  const [searchPerformed, setSearchPerformed] = useState(false);
 
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
+    setSearchQuery('');
+    setSearchedDrug(null);
+    setSearchPerformed(false);
+  };
+
+  const handleSearch = () => {
+    let foundDrug = null;
+    let foundCategory = '';
+
+    Categories.forEach(category => {
+      const drugs = getDrugsByCategory(category.category);
+      drugs.forEach(drug => {
+        if (drug.drugName.toLowerCase().includes(searchQuery.toLowerCase())) {
+          foundDrug = drug;
+          foundCategory = category.category;
+        }
+      });
+    });
+
+    if (foundDrug) {
+      setSearchedDrug(foundDrug);
+      setSelectedCategory(foundCategory);
+    } else {
+      setSearchedDrug(null);
+    }
+
+    setSearchPerformed(true);
   };
 
   const getDrugsByCategory = (category) => {
@@ -60,7 +89,7 @@ const OurPharmacy = () => {
     }
   };
 
-  const drugsToDisplay = getDrugsByCategory(selectedCategory);
+  const drugsToDisplay = searchedDrug ? [searchedDrug] : getDrugsByCategory(selectedCategory);
 
   return (
     <div className='main-div'>
@@ -72,8 +101,13 @@ const OurPharmacy = () => {
       <div className="category-drugs-main">
         <div className="search-filter">
           <div className='search'>
-            <input type="text" placeholder='Search' />
-            <img src={search} alt="search" className='search-icon' />
+            <input
+              type="text"
+              placeholder='Search for drugs'
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+            />
+            <button onClick={handleSearch}>Search</button>
           </div>
           <div className='filter'>
             <span>Filter <button><img src={filter} alt="" /></button></span>
@@ -86,7 +120,7 @@ const OurPharmacy = () => {
             <h2><u>Categories</u></h2>
             <ul>
               {Categories.map(item => (
-                <li 
+                <li
                   key={item.id}
                   className={selectedCategory === item.category ? 'selected-category' : ''}
                   onClick={() => handleCategoryClick(item.category)}
@@ -106,42 +140,46 @@ const OurPharmacy = () => {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <table>
-                <tbody>
-                  {drugsToDisplay.map((item, index) => {
-                    if (index % 5 === 0) {
-                      return (
-                        <tr key={index}>
-                          {drugsToDisplay.slice(index, index + 5).map((drug) => (
-                            <td key={drug.id}>
-                              <div className='drug-div'>
-                                <div className='img-div'>
-                                  <img src={drug.image0} alt={drug.drugName} />
+              {searchPerformed && !searchedDrug ? (
+                <div>Drug not found or check drug spelling</div>
+              ) : (
+                <table>
+                  <tbody>
+                    {drugsToDisplay.map((item, index) => {
+                      if (index % 5 === 0) {
+                        return (
+                          <tr key={index}>
+                            {drugsToDisplay.slice(index, index + 5).map((drug) => (
+                              <td key={drug.id}>
+                                <div className='drug-div'>
+                                  <div className='img-div'>
+                                    <img src={drug.image0} alt={drug.drugName} />
+                                  </div>
+                                  <div className="drug-name">
+                                    <span>{drug.drugName}</span>
+                                  </div>
+                                  <div className='price-avail-div'>
+                                    <span>{drug.price}</span>
+                                    {drug.inStock ? (
+                                      <span className='in-stock'>In Stock</span>
+                                    ) : (
+                                      <span className='out-of-stock'>Out of Stock</span>
+                                    )}
+                                  </div>
+                                  <div className='view-btn'>
+                                    <Link className='link' to={`/our-pharmacy/${selectedCategory}/${drug.id}`}>View</Link>
+                                  </div>
                                 </div>
-                                <div className="drug-name">
-                                  <span>{drug.drugName}</span>
-                                </div>
-                                <div className='price-avail-div'>
-                                  <span>{drug.price}</span>
-                                  {drug.inStock ? (
-                                    <span className='in-stock'>In Stock</span>
-                                  ) : (
-                                    <span className='out-of-stock'>Out of Stock</span>
-                                  )}
-                                </div>
-                                <div className='view-btn'>
-                                  <Link className='link' to={`/our-pharmacy/${selectedCategory}/${drug.id}`}>View</Link>
-                                </div>
-                              </div>
-                            </td>
-                          ))}
-                        </tr>
-                      );
-                    }
-                    return null;
-                  })}
-                </tbody>
-              </table>
+                              </td>
+                            ))}
+                          </tr>
+                        );
+                      }
+                      return null;
+                    })}
+                  </tbody>
+                </table>
+              )}
             </motion.div>
           </div>
         </div>
@@ -150,9 +188,9 @@ const OurPharmacy = () => {
         {/* Recommended drugs and products */}
         <div className="recommended">
           <h1>Recommended Drugs</h1>
-        </div>   
+        </div>
         <div className='recommended-drugs'>
-          
+
         </div>
       </div>
     </div>
