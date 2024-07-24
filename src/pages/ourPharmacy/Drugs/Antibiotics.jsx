@@ -20,7 +20,7 @@ const AntibioticsData = [
         image1: '',
         image2: '',
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 4.00",
         uses: [
             "Treating respiratory tract infections such as bronchitis and pneumonia.",
             "Managing skin infections including cellulitis and impetigo.",
@@ -42,7 +42,7 @@ const AntibioticsData = [
         image1: '',
         image2: '',
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 4.00",
         uses: [
             "Treating acne and skin infections.",
             "Managing respiratory tract infections such as pneumonia and bronchitis.",
@@ -63,7 +63,7 @@ const AntibioticsData = [
         image1: '',
         image2: '',
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 6.00",
         uses: [
             "Treating skin and soft tissue infections like cellulitis and impetigo.",
             "Managing bone and joint infections, including osteomyelitis.",
@@ -84,7 +84,7 @@ const AntibioticsData = [
         image1: '',
         image2: '',
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 4.00",
         uses: [
             "Treating respiratory tract infections like bronchitis and pneumonia.",
             "Managing urinary tract infections (UTIs).",
@@ -105,7 +105,7 @@ const AntibioticsData = [
         image1: '',
         image2: '',
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 7.00",
         uses: [
             "Treating serious infections like typhoid fever and paratyphoid fever.",
             "Managing bacterial meningitis.",
@@ -126,7 +126,7 @@ const AntibioticsData = [
         image1: '',
         image2: '',
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 3.00",
         uses: [
             "Treating streptococcal infections such as strep throat and scarlet fever.",
             "Managing syphilis and other sexually transmitted infections.",
@@ -147,7 +147,7 @@ const AntibioticsData = [
         image1: '',
         image2: '',
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 9.00",
         uses: [
             "Treating skin and soft tissue infections like cellulitis and impetigo.",
             "Managing respiratory tract infections such as bronchitis and pneumonia.",
@@ -168,7 +168,7 @@ const AntibioticsData = [
         image1: '',
         image2: '',
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 30.00",
         uses: [
             "Treating urinary tract infections (UTIs).",
             "Managing respiratory tract infections such as bronchitis and pneumonia.",
@@ -189,7 +189,7 @@ const AntibioticsData = [
         image1: '',
         image2: '',
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 50.00",
         uses: [
             "Treating respiratory tract infections, including bronchitis and pneumonia.",
             "Managing skin and soft tissue infections such as cellulitis and impetigo.",
@@ -210,7 +210,7 @@ const AntibioticsData = [
         image1: '',
         image2: '',
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 82.00",
         uses: [
             "Treating respiratory tract infections such as bronchitis and pneumonia.",
             "Managing skin and soft tissue infections like cellulitis and impetigo.",
@@ -231,7 +231,7 @@ const AntibioticsData = [
         image1: '',
         image2: '',
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 12.00",
         uses: [
             "Treating candidiasis (yeast infections) of the mouth, throat, and esophagus.",
             "Managing cryptococcal meningitis, particularly in immunocompromised individuals.",

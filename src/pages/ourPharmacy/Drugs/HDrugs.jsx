@@ -25,7 +25,7 @@ const HerbalDrugsData = [
         image1: Rooter1,
         image2: "",
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 40.00",
         uses: [
             "Assisting in detoxification and improving metabolic function.",
             "Providing general wellness support and addressing minor health concerns.",
@@ -46,7 +46,7 @@ const HerbalDrugsData = [
         image1: Time1,
         image2: "",
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 27.00",
         uses: [
             "Supporting digestive health and alleviating gastrointestinal discomfort.",
             "Enhancing immune system function and overall vitality.",
@@ -67,7 +67,7 @@ const HerbalDrugsData = [
         image1: Tabea1,
         image2: Tabea2,
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 32.00",
         uses: [
             "Supporting digestive health and alleviating gastrointestinal issues.",
             "Enhancing immune system function and overall resilience.",
@@ -88,7 +88,7 @@ const HerbalDrugsData = [
         image1: "",
         image2: "",
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 30.00",
         uses: [
             "Enhancing general vitality and overall well-being.",
             "Supporting digestive health and alleviating gastrointestinal discomfort.",
@@ -109,7 +109,7 @@ const HerbalDrugsData = [
         image1: Imboost1,
         image2: "",
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 23.00",
         uses: [
             "Enhancing immune system function and boosting the body's defense against infections.",
             "Supporting overall health and reducing the risk of illness.",
@@ -130,7 +130,7 @@ const HerbalDrugsData = [
         image1: Mighty1,
         image2: "",
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 40.00",
         uses: [
             "Enhancing physical energy and stamina.",
             "Supporting overall vitality and general well-being.",
@@ -151,7 +151,7 @@ const HerbalDrugsData = [
         image1: Masada1,
         image2: "",
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 25.00",
         uses: [
             "Supporting overall health and enhancing vitality.",
             "Improving physical and mental well-being.",

@@ -24,7 +24,7 @@ const StomachUpsetsData = [
         image1: Nugel1,
         image2: "",
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 70.00",
         uses: [
             "Relieving heartburn and acid indigestion.",
             "Alleviating symptoms of gastritis and peptic ulcers.",
@@ -46,7 +46,7 @@ const StomachUpsetsData = [
         image1: Magacid1,
         image2: Magacid2,
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 23.00",
         uses: [
             "Relieving heartburn and acid indigestion.",
             "Alleviating symptoms of gastritis and peptic ulcers.",
@@ -89,7 +89,7 @@ const StomachUpsetsData = [
         image1: MoM1,
         image2: MoM2,
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 29.00",
         uses: [
             "Acting as a mild laxative to relieve constipation.",
             "Relieving symptoms of acid indigestion and heartburn.",
@@ -109,7 +109,7 @@ const StomachUpsetsData = [
         image1: Omeprazol1,
         image2: "",
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 6.00",
         uses: [
             "Treating gastroesophageal reflux disease (GERD) by reducing stomach acid.",
             "Managing peptic ulcers and promoting healing of the stomach lining.",

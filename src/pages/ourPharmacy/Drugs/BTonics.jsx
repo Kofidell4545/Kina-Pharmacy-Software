@@ -21,7 +21,7 @@ const BloodTonicsData = [
         image1: "",
         image2: Feroglobin2,
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 130.00",
         uses: [
             "Preventing or treating iron deficiency anemia.",
             "Supporting overall blood health and improving energy levels.",
@@ -43,7 +43,7 @@ const BloodTonicsData = [
         image1: Durol1,
         image2: Durol2,
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 37.00",
         uses: [
             "Boosting energy levels and reducing fatigue.",
             "Supporting the immune system and overall health.",
@@ -65,7 +65,7 @@ const BloodTonicsData = [
         image1: "",
         image2: "",
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 25.00",
         uses: [
             "Preventing or treating iron deficiency anemia.",
             "Supporting overall blood health and enhancing energy levels.",
@@ -87,7 +87,7 @@ const BloodTonicsData = [
         image1: Foligrow1,
         image2: "",
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 45.00",
         uses: [
             "Preventing or treating folic acid and iron deficiency anemia.",
             "Supporting healthy red blood cell formation and overall blood health.",
@@ -109,7 +109,7 @@ const BloodTonicsData = [
         image1: Zincofer1,
         image2: "",
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 64.00",
         uses: [
             "Preventing or treating iron deficiency anemia.",
             "Supporting healthy immune function with zinc.",

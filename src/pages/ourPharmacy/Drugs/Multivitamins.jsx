@@ -23,7 +23,7 @@ const MultivitaminsData = [
         image1: Apetamin1,
         image2: "",
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 56.00",
         uses: [
             "Stimulating appetite in individuals with poor appetite or anorexia.",
             "Promoting weight gain in underweight individuals or those recovering from illness.",
@@ -39,13 +39,13 @@ const MultivitaminsData = [
     },
     {
         id: 1,
-        drugName: "Tress Orix",
+        drugName: "Tres Orix",
         description: "Tres Orix is a nutritional supplement designed to stimulate appetite and promote weight gain. It contains a combination of vitamins, amino acids, and the appetite stimulant cyproheptadine. This formulation helps individuals with poor appetite or those needing to gain weight due to various conditions. The vitamins and amino acids support overall health, while cyproheptadine helps increase hunger by influencing certain chemical pathways in the body.",
         image0: Tres0,
         image1: Tres1,
         image2: Tres2,
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 63.00",
         uses: [
             "Stimulating appetite in individuals with anorexia or poor appetite.",
             "Promoting weight gain in underweight individuals or those recovering from illness.",
@@ -67,7 +67,7 @@ const MultivitaminsData = [
         image1: Gudapet1,
         image2: Gudapet2,
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 23.00",
         uses: [
             "Stimulating appetite in individuals with poor appetite or anorexia.",
             "Promoting weight gain in underweight individuals or those recovering from illness.",
@@ -89,7 +89,7 @@ const MultivitaminsData = [
         image1: "",
         image2: "",
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 15.00",
         uses: [
             "Providing essential vitamins and minerals to support overall health.",
             "Addressing dietary deficiencies and improving nutritional status.",
@@ -111,7 +111,7 @@ const MultivitaminsData = [
         image1: Zincovit1,
         image2: Zincovit2,
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 60.00",
         uses: [
             "Providing essential vitamins and minerals to support overall health.",
             "Boosting immune function and reducing the risk of infections.",

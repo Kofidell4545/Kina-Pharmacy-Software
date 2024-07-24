@@ -22,7 +22,7 @@ const DewormersData = [
         image1: Wormplex1,
         image2: Wormplex2,
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 16.00",
         uses: [
             "Treating intestinal worm infections, including roundworms, hookworms, and tapeworms.",
             "Relieving symptoms associated with worm infestations, such as abdominal pain and digestive issues.",
@@ -43,7 +43,7 @@ const DewormersData = [
         image1: Zentel1,
         image2: Zentel2,
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 22.00",
         uses: [
             "Treating infections caused by intestinal worms, including roundworms, hookworms, and tapeworms.",
             "Managing conditions such as ascariasis, trichuriasis, and enterobiasis (pinworm infection).",
@@ -64,7 +64,7 @@ const DewormersData = [
         image1: Vermox1,
         image2: "",
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 28.00",
         uses: [
             "Treating infections caused by intestinal worms, such as roundworms, hookworms, and whipworms.",
             "Managing pinworm infections (enterobiasis).",
@@ -85,7 +85,7 @@ const DewormersData = [
         image1: Tanzol1,
         image2: Tanzol2,
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 5.00",
         uses: [
             "Treating infections caused by intestinal worms, such as roundworms, hookworms, and tapeworms.",
             "Managing conditions like ascariasis, trichuriasis, and enterobiasis (pinworm infection).",
@@ -96,27 +96,6 @@ const DewormersData = [
             "Albendazole (active ingredient).",
             "Excipients like microcrystalline cellulose and magnesium stearate (in tablets).",
             "Fillers and stabilizers (in oral suspension forms).",
-        ],
-    },
-    {
-        id: 4,
-        drugName: "Bense's",
-        description: "",
-        image0: "",
-        image1: "",
-        image2: "",
-        inStock: true,
-        price: "GHS 100.00",
-        uses: [
-            "",
-            "",
-            "",
-            "",
-        ],
-        keyComponents: [
-            "",
-            "",
-            "",
         ],
     },
 ];

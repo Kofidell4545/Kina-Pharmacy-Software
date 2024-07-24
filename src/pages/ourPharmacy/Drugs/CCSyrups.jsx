@@ -24,7 +24,7 @@ const CoughSyrupsData = [
         image1: Menthodex1,
         image2: "",
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 40.00",
         uses: [
             "Relieving symptoms of cough, whether dry or productive.",
             "Easing throat irritation and discomfort associated with coughing.",
@@ -45,7 +45,7 @@ const CoughSyrupsData = [
         image1: Stopkof1,
         image2: Stopkof2,
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 27.00",
         uses: [
             "Relieving cough symptoms, including both dry and productive coughs.",
             "Suppressing persistent cough to provide comfort and improve sleep.",
@@ -66,7 +66,7 @@ const CoughSyrupsData = [
         image1: Samalin1,
         image2: "",
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 17.00",
         uses: [
             "Relieving symptoms of both dry and productive coughs.",
             "Suppressing persistent cough to reduce discomfort and improve sleep.",
@@ -108,7 +108,7 @@ const CoughSyrupsData = [
         image1: Koffex1,
         image2: "",
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 17.00",
         uses: [
             "Relieving symptoms of both dry and productive coughs.",
             "Suppressing frequent or troublesome coughing to enhance comfort and rest.",
