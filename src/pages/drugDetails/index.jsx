@@ -66,6 +66,7 @@ const DrugDetails = () => {
             
             <div className="thumbnail-images">
               <table>
+                <tbody>
                 <tr>
                   <td>
                     {drug.image0 && (
@@ -98,6 +99,7 @@ const DrugDetails = () => {
                     )}
                   </td>
                 </tr>
+                </tbody>
               </table>
             </div>
           </div>
