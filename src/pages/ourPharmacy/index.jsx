@@ -6,7 +6,8 @@ import { Link } from 'react-router-dom';
 import "./styles.css";
 
 // icons import
-import filter from "../../assets/icons/filter.png";
+import filterIcon from "../../assets/icons/filter.png";
+import searchIcon from "../../assets/icons/search.png"
 
 // Drugs imports
 import AntibioticsData from './Drugs/Antibiotics';
@@ -110,7 +111,7 @@ const OurPharmacy = () => {
             <button onClick={handleSearch}>Search</button>
           </div>
           <div className='filter'>
-            <span>Filter <button><img src={filter} alt="filter icon" /></button></span>
+            <span>Filter <button><img src={filterIcon} alt="filter icon" /></button></span>
           </div>
         </div>
 
