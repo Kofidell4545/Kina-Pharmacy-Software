@@ -110,7 +110,7 @@ const OurPharmacy = () => {
             <button onClick={handleSearch}>Search</button>
           </div>
           <div className='filter'>
-            <span>Filter <button><img src={filter} alt="" /></button></span>
+            <span>Filter <button><img src={filter} alt="filter icon" /></button></span>
           </div>
         </div>
 
@@ -143,42 +143,29 @@ const OurPharmacy = () => {
               {searchPerformed && !searchedDrug ? (
                 <div>Drug not found or check drug spelling</div>
               ) : (
-                <table>
-                  <tbody>
-                    {drugsToDisplay.map((item, index) => {
-                      if (index % 5 === 0) {
-                        return (
-                          <tr key={index}>
-                            {drugsToDisplay.slice(index, index + 5).map((drug) => (
-                              <td key={drug.id}>
-                                <div className='drug-div'>
-                                  <div className='img-div'>
-                                    <img src={drug.image0} alt={drug.drugName} />
-                                  </div>
-                                  <div className="drug-name">
-                                    <span>{drug.drugName}</span>
-                                  </div>
-                                  <div className='price-avail-div'>
-                                    <span>{drug.price}</span>
-                                    {drug.inStock ? (
-                                      <span className='in-stock'>In Stock</span>
-                                    ) : (
-                                      <span className='out-of-stock'>Out of Stock</span>
-                                    )}
-                                  </div>
-                                  <div className='view-btn'>
-                                    <Link className='link' to={`/our-pharmacy/${selectedCategory}/${drug.id}`}>View</Link>
-                                  </div>
-                                </div>
-                              </td>
-                            ))}
-                          </tr>
-                        );
-                      }
-                      return null;
-                    })}
-                  </tbody>
-                </table>
+                <div className="drugs-grid">
+                  {drugsToDisplay.map((drug) => (
+                    <div className='drug-div' key={drug.id}>
+                      <div className='img-div'>
+                        <img src={drug.image0} alt={drug.drugName} />
+                      </div>
+                      <div className="drug-name">
+                        <span>{drug.drugName}</span>
+                      </div>
+                      <div className='price-avail-div'>
+                        <span>{drug.price}</span>
+                        {drug.inStock ? (
+                          <span className='in-stock'>In Stock</span>
+                        ) : (
+                          <span className='out-of-stock'>Out of Stock</span>
+                        )}
+                      </div>
+                      <div className='view-btn'>
+                        <Link className='link' to={`/our-pharmacy/${selectedCategory}/${drug.id}`}>View</Link>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               )}
             </motion.div>
           </div>
@@ -190,7 +177,7 @@ const OurPharmacy = () => {
           <h1>Recommended Drugs</h1>
         </div>
         <div className='recommended-drugs'>
-
+          {/* Recommended drugs content */}
         </div>
       </div>
     </div>
