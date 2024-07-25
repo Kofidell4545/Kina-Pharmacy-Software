@@ -43,59 +43,61 @@
 .search-filter {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    margin: 20px 0;
 }
 
 .search {
-    width: 190px;
-    border: 1px solid;
-    height: 40px;
-    border-radius: 5px;
+    display: flex;
+    align-items: center;
 }
 
 .search input {
-    width: 152px;
-    height: 37.5px;
-    border: none;
     padding: 10px;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 175px;
 }
 
 .search button {
+    background: none;
     border: none;
-    margin-left: 1.4px;
-    border-top-right-radius: 4.5px;
-    border-bottom-right-radius: 4.5px;
-    color: #5b5a5a;
-    padding: 5px;
-    height: 38.5px;
-    transition: 0.3s ease-in-out;
-}
+    cursor: pointer;
+    margin-left: 10px;
+  }
 
-.search button:hover {
+/* .search button:hover {
     background-color: #c7debe;
-}
+} */
 
-.search button img {
-    width: 25px;
+.search-icon {
+    width: 20px;
+    height: 20px;
+    filter: invert(300%);
 }
 
 .filter {
-    width: 80px;
-    height: 40px;
-    border: 1px solid #000;
-    padding: 5px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    padding: 5px;
+}
+
+.filter span {
+    display: flex;
+    align-items: center;
+    color: #aaa;
 }
 
 .filter button {
     background: none;
     border: none;
+    cursor: pointer;
+    margin-left: 5px;
 }
 
 .filter button img {
-    margin-bottom: -7px;
+    margin-bottom: -5px;
 }
 
 .category-drug {
@@ -144,6 +146,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    padding: 20px;
 }
 
 .drug-div {
@@ -153,7 +156,7 @@
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 20px;
-    width: calc(100% / 5 - 20px); /* Default width for 5 items per row */
+    width: calc(100% / 5 - 20px);
     box-sizing: border-box;
 }
 
@@ -208,16 +211,46 @@
 }
 
 /* Responsive Styles */
-@media only screen and (max-width: 812px) {
+@media only screen and (min-width: 992px) and (max-width: 1440px) {
+    .search input {
+        width: 208px;
+    }
+
+    .drugs-grid {
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+    .search input {
+        width: 210px;
+    }
+
+    .drugs-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 0;
+    }
+
     .drug-div {
-        width: calc(100% / 3 - 20px); /* Adjust width for 4 items per row */
+        width: calc(100% / 3 - 15px);
     }
 
     .price-avail-div {
         display: flex;
         align-items: center;
-        gap: 15px;
+        gap: 10px;
     }
+
+    .view-btn .link {
+        display: inline-block;
+        border: 1px solid #000;
+        border-radius: 5px;
+        padding: 5px 20px;
+        transition: 0.3s ease-in-out;
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -254,8 +287,12 @@
         border-radius: 10px;
     }
 
+    .drugs-grid {
+        padding: 0;
+    }
+
     .drug-div {
-        width: calc(100% / 4 - 20px); /* Adjust width for 4 items per row */
+        width: calc(100% / 4 - 15px);
     }
 
     .price-avail-div {
@@ -292,7 +329,7 @@
     }
     
     .search input {
-        width: 120px;
+        width: 150px;
     }
 
     .search button:active {
@@ -304,8 +341,16 @@
         border-radius: 10px;
     }
 
+    .drugs-grid {
+        padding: 0;
+    }
+
     .drug-div {
-        width: calc(100% / 2 - 20px); /* Adjust width for 2 items per row */
+        width: calc(100% / 2 - 10px);
+    }
+
+    .img-div img {
+        height: 80px;
     }
 
     .view-btn {
