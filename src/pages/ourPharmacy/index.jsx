@@ -108,7 +108,9 @@ const OurPharmacy = () => {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
-            <button onClick={handleSearch}>Search</button>
+            <button onClick={handleSearch}>
+              <img src={searchIcon} alt="search icon" className="search-icon" />
+            </button>
           </div>
           <div className='filter'>
             <span>Filter <button><img src={filterIcon} alt="filter icon" /></button></span>
@@ -179,6 +181,7 @@ const OurPharmacy = () => {
         </div>
         <div className='recommended-drugs'>
           {/* Recommended drugs content */}
+
         </div>
       </div>
     </div>
