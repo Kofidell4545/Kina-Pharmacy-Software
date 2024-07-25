@@ -68,7 +68,7 @@ const StomachUpsetsData = [
         image1: Gastrogen1,
         image2: "",
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 25.00",
         uses: [
             "Relieving heartburn and acid indigestion.",
             "Alleviating symptoms of gastritis and peptic ulcers.",

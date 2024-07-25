@@ -87,7 +87,7 @@ const CoughSyrupsData = [
         image1: Viscof1,
         image2: Viscof2,
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 55.00",
         uses: [
             "Relieving symptoms of both dry and productive coughs.",
             "Suppressing frequent or severe coughing to improve comfort and sleep.",
@@ -129,7 +129,7 @@ const CoughSyrupsData = [
         image1: "",
         image2: "",
         inStock: true,
-        price: "GHS 100.00",
+        price: "GHS 20.00",
         uses: [
             "Relieving both dry and productive coughs.",
             "Suppressing frequent or severe coughing to improve comfort and sleep.",
