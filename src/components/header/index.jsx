@@ -25,15 +25,8 @@ const Navbar = () => {
   ];
 
   return (
-<<<<<<< HEAD
     <div className='relative bg-white flex justify-between items-center h-20 mx-auto px-4 text-white border-b-2 border-gray-300 uppercase z-50'>
       <h1 className='w-full text-3xl font-bold text-black uppercase'>kina pharmacy</h1>
-=======
-    <div className='bg-white flex justify-between items-center h-20 mx-auto px-4 text-white border-b-2 border-gray-300'>
-      <NavLink to="/">
-        <img className='logo' src={logo} alt="company logo" />
-      </NavLink>
->>>>>>> kev
 
       <ul className='hidden md:flex'>
         {navItems.map(item => (
