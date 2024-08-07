@@ -18,7 +18,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className='bg-white flex justify-between items-center h-20 mx-auto px-4 text-white border-b-2 border-gray-300 uppercase'>
+    <div className='relative bg-white flex justify-between items-center h-20 mx-auto px-4 text-white border-b-2 border-gray-300 uppercase z-50'>
       <h1 className='w-full text-3xl font-bold text-black uppercase'>kina pharmacy</h1>
 
       <ul className='hidden md:flex'>
@@ -40,8 +40,8 @@ const Navbar = () => {
       <ul
         className={
           nav
-            ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-slate-900 ease-in-out duration-500 md:hidden flex flex-col'
-            : 'fixed left-[-100%] top-0 w-[60%] h-full border-r border-r-gray-900 bg-slate-900 ease-in-out duration-500 md:hidden flex flex-col'
+            ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-slate-900 ease-in-out duration-500 md:hidden flex flex-col z-50'
+            : 'fixed left-[-100%] top-0 w-[60%] h-full border-r border-r-gray-900 bg-slate-900 ease-in-out duration-500 md:hidden flex flex-col z-50'
         }
       >
         <h1 className='w-full text-3xl font-bold text-white m-4 uppercase'>kina pharmacy</h1>
