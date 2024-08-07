@@ -1,8 +1,15 @@
 import React from 'react'
+import { Helmet } from 'react-helmet';
+
 
 const Education = () => {
   return (
-    <div>Education</div>
+    <div>
+      <Helmet>
+        <title>Education</title>
+      </Helmet>
+      Education
+    </div>
   )
 }
 

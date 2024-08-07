@@ -1,8 +1,12 @@
 import React from "react";
+import { Helmet } from 'react-helmet';
 
 const Contact = () => {
   return (
     <div className="overflow-x-hidden">
+      <Helmet>
+          <title>Contact Us</title>
+      </Helmet>
       <div className="flex sm:flex-row flex-col sm:px-14 px-4 my-10 w-full h-auto">
         <div className="w-full sm:w-[50%] py-10 flex flex-col">
           <h1 className="sm:text-5xl text-2xl mb-6 font-bold sm:text-left text-center">

@@ -1,11 +1,16 @@
 import React from "react";
+import { Helmet } from 'react-helmet';
+
 
 const About = () => {
   return (
     <div className="overflow-x-hidden">
+      <Helmet>
+        <title>About Us</title>
+      </Helmet>
       <div className="relative flex flex-col sm:flex-row bg-purple-700">
         <img
-          className="h-[350px] w-full object-cover"
+          className="h-[486px] w-full object-cover"
           src="https://globalnews.ca/wp-content/uploads/2022/12/pharmacy-canada-prescription-drugs.jpg?quality=85&strip=all&w=1200"
         />
         <div className="absolute inset-0 bg-black opacity-50"></div>

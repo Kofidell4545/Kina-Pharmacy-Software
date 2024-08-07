@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
+
 
 // styles import
 import "./styles.css";
@@ -93,6 +95,9 @@ const OurPharmacy = () => {
 
   return (
     <div className='main-div'>
+      <Helmet>
+        <title>Our Pharmacy</title>
+      </Helmet>
       <div className="pharmacy-header">
         <h1>Our Pharmacy</h1>
         <p>Welcome to our pharmacy, where we prioritize your health and wellness. Discover a wide range of quality <br /> products and personalized services designed to meet your unique needs.</p>

@@ -1,3 +1,5 @@
+import { Helmet } from 'react-helmet';
+
 import backgroundImage from "../../assets/background.jpg";
 import { BsTruck } from "react-icons/bs";
 import { CiCreditCard1 } from "react-icons/ci";
@@ -53,8 +55,11 @@ const products = [
 const Home = () => {
   return (
     <main className="flex flex-col min-h-screen bg-white">
+      <Helmet>
+          <title>Home - Kina Pharmacy</title>
+        </Helmet>
       <div
-        className="relative h-[570px] bg-cover bg-center"
+        className="relative h-[486px] bg-cover bg-center"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col justify-start items-start p-14 pl-20">
