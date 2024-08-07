@@ -2,6 +2,12 @@ import React from "react";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
+// styles
+import "../../components/header/styles.css"
+
+// logo import
+import logo from "../../assets/utils/logo.png"
+
 const sections = [
   { title: "Home", path: "/" },
   { title: "About", path: "/about" },
@@ -21,7 +27,7 @@ const Footer = () => {
     <div className="w-full bg-slate-900 text-gray-300 px-2 py-4">
       <div className="max-w-[1240px] mx-auto">
         <div className="mb-4">
-          <img src="/path-to-logo.png" alt="Logo" className="h-12 mx-auto" />
+          <img src={logo} alt="Logo" className="logo" />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-6 border-b-2 border-gray-600 py-4 gap-4">
