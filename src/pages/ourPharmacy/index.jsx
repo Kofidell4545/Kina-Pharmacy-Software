@@ -179,11 +179,43 @@ const OurPharmacy = () => {
         {/* Recommended drugs and products */}
         <div className="recommended">
           <h1>Recommended Drugs</h1>
+          
+            {/* Recommended drugs content */}
+            <div className='recommended-drugs' >
+            {drugsToDisplay.slice(0, 2).map((drug) => (
+                <div className="box1" key={drug.id}>
+                  <div className="img-name-avail-box">
+                    <div className="recommended-img-div">
+                      <img src={drug.image0} alt={drug.drugName} />
+                    </div>
+                    <div className="drug-name">
+                      <span>{drug.drugName}</span> <br />
+                      {drug.inStock ? (
+                          <span className='in-stock'>In Stock</span>
+                        ) : (
+                          <span className='out-of-stock'>Out of Stock</span>
+                      )}
+                    </div>
+                  </div>
+                  
+                  <div className="comp-view">
+                    <div className="components">
+                      <h4>Uses</h4>
+                      <ul>
+                        {drug.uses.map((uses, index) => (
+                          <li key={index}>{uses}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className="view-drug">
+                      <Link className='link' to={`/our-pharmacy/${selectedCategory}/${drug.id}`}>View</Link>
+                    </div>
+                  </div>
+                </div>
+            ))}
+          </div>
         </div>
-        <div className='recommended-drugs'>
-          {/* Recommended drugs content */}
-
-        </div>
+          
       </div>
     </div>
   );
