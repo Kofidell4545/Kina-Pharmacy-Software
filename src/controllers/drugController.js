@@ -10,5 +10,12 @@ const postDrug = asyncHadler(async (request, response) => {
   if (!title || !price || !description || !stock) {
     return response.json({ message: "Please provide All Fields" });
   }
-  const submit = await Drug.create(request.body);
+  const submited = await Drug.create(request.body);
+  if (submited) {
+    return response.json({ message: "Uploaded successfully", submited });
+  } else {
+    return response.json({ message: "Failed to Uplaod" });
+  }
 });
+
+module.exports = postDrug;

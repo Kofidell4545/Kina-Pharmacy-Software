@@ -23,4 +23,4 @@ var productSchema = new mongoose.Schema({
     type: String,
   },
 });
-model.export = mongoose.model("drug", productSchema);
+module.exports = mongoose.model("Drug", productSchema);
