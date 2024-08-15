@@ -3,9 +3,7 @@ const AntibioticsData = [
         id: 0,
         drugName: "Amoxicillin",
         description: "Amoxicillin is a widely used antibiotic that belongs to the penicillin group of drugs. It is effective against a range of bacterial infections by inhibiting the synthesis of bacterial cell walls. This medication is commonly prescribed for ear infections, strep throat, pneumonia, and urinary tract infections. Amoxicillin is typically available in the form of tablets, capsules, or liquid suspensions.",
-        image0: Amoxicillin0,
-        image1: '',
-        image2: '',
+        images: [],
         inStock: true,
         price: "GHS 4.00",
         uses: [
@@ -26,8 +24,7 @@ const AntibioticsData = [
         drugName: "Tetracycline",
         description: "Tetracycline is a broad-spectrum antibiotic that is effective against a wide variety of bacterial infections. It works by inhibiting protein synthesis in bacteria, thereby preventing their growth and reproduction. Tetracycline is commonly used to treat acne, respiratory tract infections, urinary tract infections, and certain sexually transmitted infections. It is available in the form of capsules, tablets, and topical preparations.",
         image0: Tetracycline0,
-        image1: '',
-        image2: '',
+        images: [],
         inStock: true,
         price: "GHS 4.00",
         uses: [
@@ -46,9 +43,7 @@ const AntibioticsData = [
         id: 2,
         drugName: "Flucloxacillin",
         description: "Flucloxacillin is a penicillin-type antibiotic used to treat bacterial infections. It is particularly effective against infections caused by Staphylococcus aureus, including strains that produce beta-lactamase. Flucloxacillin is commonly prescribed for skin and soft tissue infections, bone infections, and respiratory tract infections. It is available in oral forms such as capsules and liquid suspensions, as well as in injectable forms.",
-        image0: Flucloxacillin0,
-        image1: '',
-        image2: '',
+        images: [],
         inStock: true,
         price: "GHS 6.00",
         uses: [
