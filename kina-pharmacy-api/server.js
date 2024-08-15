@@ -2,6 +2,11 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
+// Importing the files to the server
+const antibioticsData = require("./Drugs/AntibioticsS");
+const bloodTonicsData = require("./Drugs/BTonics");
+const coughSyrupsData = require("./Drugs/CCSyrups");
+const dewormersData = require("./Drugs/Dewormers");
 // Middleware to parse JSON bodies
 app.use(express.json());
 
