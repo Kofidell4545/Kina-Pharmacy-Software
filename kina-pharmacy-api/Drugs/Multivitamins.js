@@ -3,7 +3,10 @@ const MultivitaminsData = [
         id: 0,
         drugName: "Apetamin",
         description: "Apetamin is a supplement that combines vitamins, amino acids, and the antihistamine cyproheptadine. It is primarily used to stimulate appetite and promote weight gain in individuals who have difficulty gaining weight or suffer from conditions that lead to weight loss. Cyproheptadine increases hunger by blocking certain chemical messengers in the body, while the vitamins and amino acids support overall health and nutrition.",
-        images: [],
+        images: [
+            "../assets/DrugImages/Apetamin0.jpg",
+            "../assets/DrugImages/Apetamin1.webp",
+        ],
         inStock: true,
         price: "GHS 56.00",
         uses: [
@@ -23,7 +26,11 @@ const MultivitaminsData = [
         id: 1,
         drugName: "Tres Orix",
         description: "Tres Orix is a nutritional supplement designed to stimulate appetite and promote weight gain. It contains a combination of vitamins, amino acids, and the appetite stimulant cyproheptadine. This formulation helps individuals with poor appetite or those needing to gain weight due to various conditions. The vitamins and amino acids support overall health, while cyproheptadine helps increase hunger by influencing certain chemical pathways in the body.",
-        images: [],
+        images: [
+            "../assets/DrugImages/Tres-orix0.png",
+            "../assets/DrugImages/Tres-orix1.webp",
+            "../assets/DrugImages/Tres-orix2.webp",
+        ],
         inStock: true,
         price: "GHS 63.00",
         uses: [
@@ -43,7 +50,11 @@ const MultivitaminsData = [
         id: 2,
         drugName: "Gudapet",
         description: "Gudapet is a nutritional supplement designed to stimulate appetite and support weight gain. It typically contains a blend of vitamins, amino acids, and the antihistamine cyproheptadine, which is known for its appetite-stimulating properties. Gudapet is intended for individuals who struggle with poor appetite or need to gain weight due to various health conditions. The vitamins and amino acids in the supplement also help improve overall health and nutritional status.",
-        images: [],
+        images: [
+            "../assets/DrugImages/Gudapet0.jpg",
+            "../assets/DrugImages/Gudapet1.jpg",
+            "../assets/DrugImages/Gudapet2.jpg",
+        ],
         inStock: true,
         price: "GHS 23.00",
         uses: [
@@ -63,7 +74,9 @@ const MultivitaminsData = [
         id: 3,
         drugName: "Cororange",
         description: "Cororange is a nutritional supplement that combines a variety of vitamins, minerals, and other essential nutrients designed to support overall health and well-being. It is formulated to provide comprehensive nutritional support, particularly in cases of dietary deficiencies, during recovery from illness, or for general health maintenance. The specific formulation can vary, but it typically includes a range of vitamins, minerals, and sometimes herbal extracts or amino acids.",
-        images: [],
+        images: [
+            "../assets/DrugImages/Cororange0.jpg",
+        ],
         inStock: true,
         price: "GHS 15.00",
         uses: [
@@ -83,7 +96,11 @@ const MultivitaminsData = [
         id: 4,
         drugName: "Zincovit",
         description: "Zincovit is a comprehensive multivitamin and multimineral supplement designed to support overall health and well-being. It contains a balanced blend of vitamins, minerals, and trace elements, including zinc, which plays a crucial role in immune function and wound healing. Zincovit is often used to address nutritional deficiencies, boost immunity, and improve overall health, particularly in individuals with increased nutritional needs or those recovering from illness.",
-        images: [],
+        images: [
+            "../assets/DrugImages/Zincovit0.jpg",
+            "../assets/DrugImages/Zincovit1.webp",
+            "../assets/DrugImages/Zincovit2.webp",
+        ],
         inStock: true,
         price: "GHS 60.00",
         uses: [
