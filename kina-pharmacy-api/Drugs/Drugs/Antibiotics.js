@@ -1,16 +1,3 @@
-// Importing images
-import Amoxicillin0 from '../../../assets/drugs/Amoxicillin0.jpg';
-import Tetracycline0 from '../../../assets/drugs/Tetracycline0.jpg';
-import Flucloxacillin0 from '../../../assets/drugs/Flucloxacillin0.webp';
-import Ampicillin0 from '../../../assets/drugs/Ampicillin0.webp';
-import Chloramphenicol0 from '../../../assets/drugs/Chloramphenicol0.webp';
-import Penicillin0 from '../../../assets/drugs/Penicillin0.jpg';
-import Amciclox0 from '../../../assets/drugs/Ampiclox.jpg';
-import Ciprolex0 from '../../../assets/drugs/Ciprolex0.jpg';
-import Cefuroxime0 from '../../../assets/drugs/Cefuroxime0.jpg';
-import Amoxiclav0 from '../../../assets/drugs/Amoxiclav0.jpg';
-import Fluconazole0 from '../../../assets/drugs/Fluconazole0.jpg';
-
 const AntibioticsData = [
     {
         id: 0,
@@ -80,9 +67,7 @@ const AntibioticsData = [
         id: 3,
         drugName: "Ampicillin",
         description: "Ampicillin is a broad-spectrum penicillin-type antibiotic used to treat a wide range of bacterial infections. It works by inhibiting the synthesis of bacterial cell walls, leading to the death of the bacteria. Ampicillin is effective against both gram-positive and gram-negative bacteria and is often used for respiratory, urinary tract, gastrointestinal, and meningitis infections. It is available in oral forms such as capsules and liquid suspensions, as well as in injectable forms.",
-        image0: Ampicillin0,
-        image1: '',
-        image2: '',
+        images: [],
         inStock: true,
         price: "GHS 4.00",
         uses: [
@@ -101,9 +86,7 @@ const AntibioticsData = [
         id: 4,
         drugName: "Chloramphenicol",
         description: "Chloramphenicol is a broad-spectrum antibiotic that is effective against a variety of bacterial infections. It works by inhibiting bacterial protein synthesis, which prevents the bacteria from growing and reproducing. Chloramphenicol is often reserved for serious infections when other antibiotics are ineffective due to its potential for severe side effects. It is used to treat conditions such as typhoid fever, meningitis, and eye infections. Chloramphenicol is available in oral, intravenous, and topical forms.",
-        image0: Chloramphenicol0,
-        image1: '',
-        image2: '',
+        images: [],
         inStock: true,
         price: "GHS 7.00",
         uses: [
@@ -122,9 +105,7 @@ const AntibioticsData = [
         id: 5,
         drugName: "Penicillin",
         description: "Penicillin is one of the oldest and most widely used antibiotics. It works by inhibiting the synthesis of bacterial cell walls, causing the bacteria to die. Penicillin is highly effective against gram-positive bacteria and is used to treat a variety of infections such as strep throat, syphilis, and certain types of pneumonia. It is available in several forms, including oral tablets, capsules, liquid suspensions, and injectable solutions.",
-        image0: Penicillin0,
-        image1: '',
-        image2: '',
+        images: [],
         inStock: true,
         price: "GHS 3.00",
         uses: [
@@ -143,9 +124,7 @@ const AntibioticsData = [
         id: 6,
         drugName: "Amciclox",
         description: "Amciclox is a combination antibiotic that contains amoxicillin and cloxacillin. Amoxicillin is a broad-spectrum penicillin antibiotic, while cloxacillin is a beta-lactamase resistant penicillin, making the combination effective against a wider range of bacteria, including those producing beta-lactamase. This combination is used to treat various infections including skin infections, respiratory infections, and bone and joint infections. It is available in oral forms such as capsules and liquid suspensions.",
-        image0: Amciclox0,
-        image1: '',
-        image2: '',
+        images: [],
         inStock: true,
         price: "GHS 9.00",
         uses: [
@@ -164,9 +143,7 @@ const AntibioticsData = [
         id: 7,
         drugName: "Ciprolex",
         description: "Ciprolex is a brand name for ciprofloxacin, a broad-spectrum fluoroquinolone antibiotic. Ciprofloxacin works by inhibiting bacterial DNA gyrase and topoisomerase IV, which are essential for bacterial DNA replication and transcription. This action effectively stops bacterial growth and reproduction. Ciprolex is used to treat a variety of bacterial infections, including urinary tract infections, respiratory infections, and skin infections. It is available in oral forms like tablets and liquid suspensions, as well as in intravenous forms.",
-        image0: Ciprolex0,
-        image1: '',
-        image2: '',
+        images: [],
         inStock: true,
         price: "GHS 30.00",
         uses: [
@@ -185,9 +162,7 @@ const AntibioticsData = [
         id: 8,
         drugName: "Cefuroxime",
         description: "Cefuroxime is a broad-spectrum cephalosporin antibiotic that is effective against a wide range of bacteria. It works by inhibiting bacterial cell wall synthesis, leading to bacterial cell death. Cefuroxime is used to treat infections caused by both gram-positive and gram-negative bacteria, including respiratory tract infections, skin infections, and urinary tract infections. It is available in oral forms such as tablets and liquid suspensions, as well as in injectable forms.",
-        image0: Cefuroxime0,
-        image1: '',
-        image2: '',
+        images: [],
         inStock: true,
         price: "GHS 50.00",
         uses: [
@@ -206,9 +181,7 @@ const AntibioticsData = [
         id: 9,
         drugName: "Amoxiclav",
         description: "Amoxiclav is a combination antibiotic that includes amoxicillin and clavulanic acid. Amoxicillin is a broad-spectrum penicillin antibiotic, while clavulanic acid is a beta-lactamase inhibitor that helps prevent the breakdown of amoxicillin by bacterial enzymes. This combination enhances the effectiveness of amoxicillin against a wider range of bacteria, including those producing beta-lactamase. Amoxiclav is used to treat various infections such as respiratory tract infections, urinary tract infections, and skin infections. It is available in oral forms like tablets, chewable tablets, and liquid suspensions.",
-        image0: Amoxiclav0,
-        image1: '',
-        image2: '',
+        images: [],
         inStock: true,
         price: "GHS 82.00",
         uses: [
@@ -227,9 +200,7 @@ const AntibioticsData = [
         id: 10,
         drugName: "Fluconazole",
         description: "Fluconazole is an antifungal medication used to treat a range of fungal infections. It works by inhibiting the synthesis of ergosterol, a crucial component of fungal cell membranes, leading to cell death. Fluconazole is effective against many types of fungi, including Candida species and Cryptococcus neoformans. It is commonly used to treat infections such as yeast infections, cryptococcal meningitis, and fungal infections of the mouth, throat, and esophagus. Fluconazole is available in oral forms like tablets and liquid suspensions, as well as in injectable forms.",
-        image0: Fluconazole0,
-        image1: '',
-        image2: '',
+        images: [],
         inStock: true,
         price: "GHS 12.00",
         uses: [

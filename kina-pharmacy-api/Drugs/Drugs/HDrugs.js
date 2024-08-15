@@ -1,29 +1,9 @@
-// Drugs photos
-import Rooter0 from "../../../assets/drugs/Rooter0.png";
-import Rooter1 from "../../../assets/drugs/Rooter1.png";
-import Mighty0 from "../../../assets/drugs/Mighty0.png";
-import Mighty1 from "../../../assets/drugs/Mighty1.jpg";
-import Imboost0 from "../../../assets/drugs/Imboost0.jpg";
-import Imboost1 from "../../../assets/drugs/Imboost1.jpg";
-import Time0 from "../../../assets/drugs/Time0.png";
-import Time1 from "../../../assets/drugs/Time1.png";
-import Tabea0 from "../../../assets/drugs/Tabea0.jpg";
-import Tabea1 from "../../../assets/drugs/Tabea1.webp";
-import Tabea2 from "../../../assets/drugs/Tabea2.webp";
-import Masada0 from "../../../assets/drugs/Masada0.png";
-import Masada1 from "../../../assets/drugs/Masada1.png";
-// import Omama0 from "../../../assets/drugs/Omama0";
-
-
-
 const HerbalDrugsData = [
     {
         id: 0,
         drugName: "Rooter Mixture",
         description: "Rooter Herbal Mixture is a natural supplement formulated to support overall health and address various health issues using a blend of herbal ingredients. It typically combines different herbs known for their beneficial effects, such as promoting digestive health, boosting the immune system, and providing general wellness support. The specific formulation and herbs used can vary by product.",
-        image0: Rooter0,
-        image1: Rooter1,
-        image2: "",
+        images: [],
         inStock: true,
         price: "GHS 40.00",
         uses: [
@@ -42,9 +22,7 @@ const HerbalDrugsData = [
         id: 1,
         drugName: "Time Herbal Mixture",
         description: "Time Herbal Mixture is a natural supplement that combines various herbal ingredients aimed at supporting overall health and addressing specific conditions. This mixture may include herbs known for their beneficial effects on digestion, immunity, and general well-being. The exact composition can vary, but it typically leverages the synergistic effects of multiple herbs.",
-        image0: Time0,
-        image1: Time1,
-        image2: "",
+        images: [],
         inStock: true,
         price: "GHS 27.00",
         uses: [
@@ -63,9 +41,7 @@ const HerbalDrugsData = [
         id: 2,
         drugName: "Tabea Herbal Mixture",
         description: "Tabea Herbal Mixture is a natural supplement designed to provide overall health support through a blend of herbal ingredients. It typically combines herbs known for their beneficial effects on various bodily systems, including digestive health, immune support, and general well-being. The specific formulation can vary, but it usually aims to leverage the therapeutic properties of multiple herbs for holistic health benefits.",
-        image0: Tabea0,
-        image1: Tabea1,
-        image2: Tabea2,
+        images: [],
         inStock: true,
         price: "GHS 32.00",
         uses: [
@@ -84,9 +60,7 @@ const HerbalDrugsData = [
         id: 3,
         drugName: "Omama Misture",
         description: "Omama Mixture is a herbal supplement formulated to support overall health and wellness through a blend of natural ingredients. It is designed to provide benefits such as improved vitality, better digestion, and enhanced immune function. The exact composition can vary, but it generally includes herbs known for their health-promoting properties.",
-        image0: "",
-        image1: "",
-        image2: "",
+        images: [],
         inStock: true,
         price: "GHS 30.00",
         uses: [
@@ -105,9 +79,7 @@ const HerbalDrugsData = [
         id: 4,
         drugName: "Imboost",
         description: "Imboost is a dietary supplement designed to support and enhance the immune system. It often contains a blend of vitamins, minerals, and herbal ingredients known for their immune-boosting properties. The formulation is aimed at improving overall immune function, increasing resistance to infections, and maintaining general health.",
-        image0: Imboost0,
-        image1: Imboost1,
-        image2: "",
+        images: [],
         inStock: true,
         price: "GHS 23.00",
         uses: [
@@ -126,9 +98,7 @@ const HerbalDrugsData = [
         id: 5,
         drugName: "Mighty Power",
         description: "Mighty Power is a dietary supplement formulated to support overall health and enhance physical performance. It typically contains a blend of vitamins, minerals, and herbal ingredients designed to boost energy, stamina, and vitality. The supplement is aimed at improving general well-being, increasing endurance, and supporting overall health.",
-        image0: Mighty0,
-        image1: Mighty1,
-        image2: "",
+        images: [],
         inStock: true,
         price: "GHS 40.00",
         uses: [
@@ -147,9 +117,7 @@ const HerbalDrugsData = [
         id: 6,
         drugName: "Masada Mixture",
         description: "Masada Mixture is a herbal supplement designed to promote overall health and well-being through a combination of natural ingredients. It typically includes a variety of herbs known for their beneficial effects on physical and mental health. The formulation aims to support various bodily systems, enhance vitality, and improve general wellness.",
-        image0: Masada0,
-        image1: Masada1,
-        image2: "",
+        images: [],
         inStock: true,
         price: "GHS 25.00",
         uses: [
