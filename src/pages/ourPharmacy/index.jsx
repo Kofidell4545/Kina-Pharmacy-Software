@@ -1,24 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-
 
 // styles import
 import "./styles.css";
 
 // icons import
-import searchIcon from "../../assets/icons/search.png"
-
-// Drugs imports
-import AntibioticsData from './Drugs/Antibiotics';
-import BloodTonicsData from './Drugs/BTonics';
-import CoughSyrupsData from './Drugs/CCSyrups';
-import DewormersData from './Drugs/Dewormers';
-import HerbalDrugsData from './Drugs/HDrugs';
-import MalariaDrugsData from './Drugs/MDrugs';
-import MultivitaminsData from './Drugs/Multivitamins';
-import StomachUpsetsData from './Drugs/SUpsets';
+import searchIcon from "../../assets/icons/search.png";
 
 const Categories = [
   { id: 0, category: "Antibiotics" },
@@ -36,6 +26,20 @@ const OurPharmacy = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [searchedDrug, setSearchedDrug] = useState(null);
   const [searchPerformed, setSearchPerformed] = useState(false);
+  const [allDrugs, setAllDrugs] = useState([]); // Store all drugs
+
+  // Fetch drugs from the API
+  useEffect(() => {
+    fetch('http://localhost:8000/api/drugs/')
+      .then(response => response.json())
+      .then(data => {
+        console.log("Fetched data:", data); // Check this in the browser console
+        setAllDrugs(data);
+      })
+      .catch(error => console.error('Error fetching data:', error));
+  }, []);
+  
+  
 
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
@@ -45,9 +49,14 @@ const OurPharmacy = () => {
   };
 
   const handleSearch = () => {
+    if (!searchQuery) {
+      setSearchPerformed(true);
+      return;
+    }
+  
     let foundDrug = null;
     let foundCategory = '';
-
+  
     Categories.forEach(category => {
       const drugs = getDrugsByCategory(category.category);
       drugs.forEach(drug => {
@@ -57,41 +66,27 @@ const OurPharmacy = () => {
         }
       });
     });
-
+  
     if (foundDrug) {
       setSearchedDrug(foundDrug);
       setSelectedCategory(foundCategory);
     } else {
       setSearchedDrug(null);
     }
-
+  
     setSearchPerformed(true);
   };
+  
 
   const getDrugsByCategory = (category) => {
-    switch (category) {
-      case 'Antibiotics':
-        return AntibioticsData;
-      case 'Blood Tonics':
-        return BloodTonicsData;
-      case 'Cough And Cold Syrups':
-        return CoughSyrupsData;
-      case 'Dewormers':
-        return DewormersData;
-      case 'Herbal Drugs':
-        return HerbalDrugsData;
-      case 'Malaria Drugs':
-        return MalariaDrugsData;
-      case 'Multivitamins':
-        return MultivitaminsData;
-      case 'Stomach Upsets':
-        return StomachUpsetsData;
-      default:
-        return [];
+    if (!allDrugs || !Array.isArray(allDrugs)) {
+      return [];
     }
+    return allDrugs.filter(drug => drug.category === category);
   };
 
-  const drugsToDisplay = searchedDrug ? [searchedDrug] : getDrugsByCategory(selectedCategory);
+
+  const drugsToDisplay = searchedDrug ? [searchedDrug] : (allDrugs ? getDrugsByCategory(selectedCategory) : []);
 
   return (
     <div className='main-div'>
@@ -150,9 +145,9 @@ const OurPharmacy = () => {
                 <div className="drugs-grid">
                   {drugsToDisplay.map((drug) => (
                     <div className='drug-div' key={drug.id}>
-                      <div className='img-div'>
-                        <img src={drug.image0} alt={drug.drugName} />
-                      </div>
+                        <div className='img-div'>
+                          <img src={drug.images[0]} alt={drug.drugName} />
+                        </div>
                       <div className="drug-name">
                         <span>{drug.drugName}</span>
                       </div>
@@ -186,7 +181,7 @@ const OurPharmacy = () => {
                 <div className="box1" key={drug.id}>
                   <div className="img-name-avail-box">
                     <div className="recommended-img-div">
-                      <img src={drug.image0} alt={drug.drugName} />
+                      <img src={drug.images[0]} alt={drug.drugName} />
                     </div>
                     <div className="drug-name">
                       <span>{drug.drugName}</span> <br />
