@@ -72,10 +72,7 @@ Follow these steps to get the project up and running on your local machine:
 ## 🖼 Screenshots
 
 - **Home Page:**
-<<<<<<< HEAD
-=======
   ![Home Page](/kina-pharmacy-api/assets/Screenshot/home1.png)
->>>>>>> bf0dcd77e31aec33fa13be65b2f255c4417f802a
 
   ![Home Page](/kina-pharmacy-api/assets/Screenshot/home1.png)
 
@@ -89,17 +86,12 @@ Follow these steps to get the project up and running on your local machine:
 
   ![Home Page](/kina-pharmacy-api/assets/Screenshot/home6.png)
 
-  ![Home Page](/kina-pharmacy-api/assets/Screenshot/footer%20our%20pharmacy.png)
-
 - **Our Pharmacy:**
   ![Product Details](/kina-pharmacy-api/assets/Screenshot/our%20pharmacy1.png)
 
   ![Product Details](/kina-pharmacy-api/assets/Screenshot/our%20pharmacy2.png)
 
-- **Contact Us:**
-  ![Drug Recommendation](/kina-pharmacy-api/assets/Screenshot/)
-
-  ![Drug Recommendation](/kina-pharmacy-api/assets/Screenshot/)
+![Product Details](/kina-pharmacy-api/assets/Screenshot/footer%20our%20pharmacy.png)
 
 ## 🤝 Contributing
 
