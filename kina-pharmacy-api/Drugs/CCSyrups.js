@@ -21,6 +21,7 @@ const coughSyrupsData = [
       "Guaifenesin or bromhexine (expectorant).",
       "Menthol or eucalyptus oil (soothing agent).",
     ],
+    category: "Cough And Cold Syrups",
   },
   {
     id: 1,
@@ -45,6 +46,7 @@ const coughSyrupsData = [
       "Guaifenesin or ambroxol (expectorant).",
       "Menthol or eucalyptus oil (soothing agent).",
     ],
+    category: "Cough And Cold Syrups",
   },
   {
     id: 2,
@@ -68,6 +70,7 @@ const coughSyrupsData = [
       "Guaifenesin or ambroxol (expectorant).",
       "Menthol or eucalyptus oil (soothing agent).",
     ],
+    category: "Cough And Cold Syrups",
   },
   {
     id: 3,
@@ -92,6 +95,7 @@ const coughSyrupsData = [
       "Guaifenesin or ambroxol (expectorant).",
       "Menthol or eucalyptus oil (soothing agent).",
     ],
+    category: "Cough And Cold Syrups",
   },
   {
     id: 4,
@@ -115,6 +119,7 @@ const coughSyrupsData = [
       "Guaifenesin or ambroxol (expectorant).",
       "Menthol or eucalyptus oil (soothing agent).",
     ],
+    category: "Cough And Cold Syrups",
   },
   {
     id: 5,
@@ -135,6 +140,7 @@ const coughSyrupsData = [
       "Guaifenesin or ambroxol (expectorant).",
       "Menthol or eucalyptus oil (soothing agent).",
     ],
+    category: "Cough And Cold Syrups",
   },
 ];
 

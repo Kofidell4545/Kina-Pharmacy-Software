@@ -24,6 +24,7 @@ const dewormersData = [
       "Excipients such as microcrystalline cellulose and magnesium stearate (in tablets).",
       "Fillers and stabilizers (in liquid forms or tablets).",
     ],
+    category: "Dewormers",
   },
   {
     id: 1,
@@ -48,6 +49,7 @@ const dewormersData = [
       "Excipients like microcrystalline cellulose and magnesium stearate (in tablets).",
       "Fillers and stabilizers (in oral suspension forms).",
     ],
+    category: "Dewormers",
   },
   {
     id: 2,
@@ -71,6 +73,7 @@ const dewormersData = [
       "Excipients like microcrystalline cellulose and magnesium stearate (in tablets).",
       "Fillers and stabilizers (in oral suspension forms).",
     ],
+    category: "Dewormers",
   },
   {
     id: 3,
@@ -95,6 +98,7 @@ const dewormersData = [
       "Excipients like microcrystalline cellulose and magnesium stearate (in tablets).",
       "Fillers and stabilizers (in oral suspension forms).",
     ],
+    category: "Dewormers",
   },
 ];
 

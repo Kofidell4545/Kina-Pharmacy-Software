@@ -21,6 +21,7 @@ const multivitaminsData = [
             "B vitamins (support energy metabolism and nervous system health).",
             "Amino acids such as lysine (support growth and tissue repair).",
         ],
+        category: "Multivitamins",
     },
     {
         id: 1,
@@ -45,6 +46,7 @@ const multivitaminsData = [
             "B vitamins (support energy metabolism and nervous system health).",
             "Essential amino acids like lysine (support growth and tissue repair).",
         ],
+        category: "Multivitamins",
     },
     {
         id: 2,
@@ -69,6 +71,7 @@ const multivitaminsData = [
             "B vitamins (support energy metabolism and nervous system health).",
             "Essential amino acids like lysine (support growth and tissue repair).",
         ],
+        category: "Multivitamins",
     },
     {
         id: 3,
@@ -91,6 +94,7 @@ const multivitaminsData = [
             "Vitamin C (antioxidant that supports immune function and skin health).",
             "Minerals such as iron, zinc, and calcium (support various bodily functions and bone health).",
         ],
+        category: "Multivitamins",
     },
     {
         id: 4,
@@ -116,6 +120,7 @@ const multivitaminsData = [
             "Vitamin C (antioxidant that supports immune function and skin health).",
             "Minerals such as iron, selenium, and magnesium (support various bodily functions).",
         ],
+        category: "Multivitamins",
     },
 ];
 
