@@ -1,11 +1,11 @@
 import React from "react";
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
   return (
     <div className="overflow-x-hidden">
       <Helmet>
-          <title>Contact Us</title>
+        <title>Contact Us</title>
       </Helmet>
       <div className="flex sm:flex-row flex-col sm:px-14 px-4 my-10 w-full h-auto">
         <div className="w-full sm:w-[50%] py-10 flex flex-col">
@@ -49,11 +49,18 @@ const Contact = () => {
             Submit
           </button>
         </div>
+        {/* Google Map */}
         <div className="w-full sm:w-[50%] py-8">
-          <img
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31769.142377961387!2d-0.45866122568363116!3d5.545835800000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdfbbfbbfecb7ab%3A0xe98b0882e04d02a5!2sPharmacy!5e0!3m2!1sen!2sgh!4v1723771736369!5m2!1sen!2sgh"
+            width="600"
+            height="450"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
             className="object-cover h-full w-full"
-            src="https://staticmapmaker.com/img/google-placeholder.png"
-          />
+          ></iframe>
         </div>
       </div>
     </div>
