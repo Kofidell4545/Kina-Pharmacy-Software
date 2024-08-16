@@ -5,7 +5,7 @@ const herbalDrugsData = [
         description: "Rooter Herbal Mixture is a natural supplement formulated to support overall health and address various health issues using a blend of herbal ingredients. It typically combines different herbs known for their beneficial effects, such as promoting digestive health, boosting the immune system, and providing general wellness support. The specific formulation and herbs used can vary by product.",
         images: [
             "http://localhost:8000/assets/DrugImages/Rooter0.png",
-            "http://localhost:8000/assets/DrugsImages/Rooter1.png"
+            "http://localhost:8000/assets/DrugImages/Rooter1.png"
         ],
         inStock: true,
         price: "GHS 40.00",

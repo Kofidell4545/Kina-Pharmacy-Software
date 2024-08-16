@@ -31,7 +31,7 @@ const coughSyrupsData = [
     images: [
       "http://localhost:8000/assets/DrugImages/Stopkof0.jpg",
       "http://localhost:8000/assets/DrugImages/Stopkof1.jpg",
-      "http://localhost:8000/assets/DrugImages/Stopkof2.jpg",
+      "http://localhost:8000/assets/DrugImages/Stopkof2.png",
     ],
     inStock: true,
     price: "GHS 27.00",
