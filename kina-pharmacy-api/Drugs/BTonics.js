@@ -116,4 +116,4 @@ const bloodTonicsData = [
   },
 ];
 
-odule.exports = bloodTonicsData;
+module.exports = bloodTonicsData;
