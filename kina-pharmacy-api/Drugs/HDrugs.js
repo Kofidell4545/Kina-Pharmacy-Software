@@ -20,6 +20,7 @@ const herbalDrugsData = [
             "Natural flavoring agents and solvents (for better taste and solubility).",
             "Stabilizers or preservatives (to maintain product integrity and shelf life).",
         ],
+        category: "Herbal Drugs",
     },
     {
         id: 1,
@@ -42,6 +43,7 @@ const herbalDrugsData = [
             "Adaptogens like ashwagandha or ginseng (for stress management and vitality).",
             "Immune-boosting herbs such as echinacea or elderberry.",
         ],
+        category: "Herbal Drugs",
     },
     {
         id: 2,
@@ -65,6 +67,7 @@ const herbalDrugsData = [
             "Immune-boosting herbs like echinacea or astragalus.",
             "Adaptogens such as ashwagandha or ginseng (for stress relief and vitality).",
         ],
+        category: "Herbal Drugs",
     },
     {
         id: 3,
@@ -84,6 +87,7 @@ const herbalDrugsData = [
             "Digestive herbs like ginger or fennel (for digestive health).",
             "Immune-supporting herbs such as echinacea or elderberry.",
         ],
+        category: "Herbal Drugs",
     },
     {
         id: 4,
@@ -106,6 +110,7 @@ const herbalDrugsData = [
             "Zinc (essential for immune cell function and wound healing).",
             "Echinacea (known for its immune-boosting properties).",
         ],
+        category: "Herbal Drugs",
     },
     {
         id: 5,
@@ -128,6 +133,7 @@ const herbalDrugsData = [
             "B vitamins (support energy metabolism and reduce fatigue).",
             "Herbal extracts such as ginkgo biloba or rhodiola (for increased endurance and cognitive support).",
         ],
+        category: "Herbal Drugs",
     },
     {
         id: 6,
@@ -150,6 +156,7 @@ const herbalDrugsData = [
             "Digestive herbs like peppermint or ginger (for digestive health).",
             "Immune-boosting herbs such as echinacea or astragalus.",
         ],
+        category: "Herbal Drugs",
     },
 ];
 

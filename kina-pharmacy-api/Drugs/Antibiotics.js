@@ -19,6 +19,7 @@ const antibioticsData = [
       "Flavoring agents (in liquid suspension).",
       "Dyes or colorants (in tablets and capsules).",
     ],
+    category: "Antibiotics",
   },
   {
     id: 1,
@@ -39,6 +40,7 @@ const antibioticsData = [
       "Excipients like microcrystalline cellulose and magnesium stearate.",
       "Gelatin (in capsules).",
     ],
+    category: "Antibiotics",
   },
   {
     id: 2,
@@ -59,6 +61,7 @@ const antibioticsData = [
       "Excipients like microcrystalline cellulose and magnesium stearate.",
       "Sodium starch glycolate (in tablets and capsules).",
     ],
+    category: "Antibiotics",
   },
   {
     id: 3,
@@ -82,6 +85,7 @@ const antibioticsData = [
       "Excipients like microcrystalline cellulose and magnesium stearate.",
       "Gelatin (in capsules).",
     ],
+    category: "Antibiotics",
   },
   {
     id: 4,
@@ -102,6 +106,7 @@ const antibioticsData = [
       "Excipients like microcrystalline cellulose and magnesium stearate (in tablets and capsules).",
       "Preservatives and stabilizers (in liquid and injectable forms).",
     ],
+    category: "Antibiotics",
   },
   {
     id: 5,
@@ -122,6 +127,7 @@ const antibioticsData = [
       "Excipients like microcrystalline cellulose and magnesium stearate (in tablets and capsules).",
       "Stabilizers and preservatives (in liquid and injectable forms).",
     ],
+    category: "Antibiotics",
   },
   {
     id: 6,
@@ -142,6 +148,7 @@ const antibioticsData = [
       "Cloxacillin sodium (active ingredient).",
       "Excipients like microcrystalline cellulose and magnesium stearate.",
     ],
+    category: "Antibiotics",
   },
   {
     id: 7,
@@ -162,6 +169,7 @@ const antibioticsData = [
       "Excipients like microcrystalline cellulose and magnesium stearate (in tablets).",
       "Gelatin and coloring agents (in capsules).",
     ],
+    category: "Antibiotics",
   },
   {
     id: 8,
@@ -182,6 +190,7 @@ const antibioticsData = [
       "Excipients like microcrystalline cellulose and magnesium stearate (in tablets).",
       "Gelatin and coloring agents (in capsules).",
     ],
+    category: "Antibiotics",
   },
   {
     id: 9,
@@ -202,6 +211,7 @@ const antibioticsData = [
       "Clavulanic acid (active ingredient).",
       "Excipients like microcrystalline cellulose and magnesium stearate (in tablets).",
     ],
+    category: "Antibiotics",
   },
   {
     id: 10,
@@ -222,6 +232,7 @@ const antibioticsData = [
       "Excipients like lactose, microcrystalline cellulose, and magnesium stearate (in tablets).",
       "Flavoring agents and preservatives (in liquid suspensions).",
     ],
+    category: "Antibiotics",
   },
 ];
 

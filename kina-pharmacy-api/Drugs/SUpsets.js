@@ -21,6 +21,7 @@ const stomachUpsetsData = [
             "Simethicone (reduces gas and bloating).",
             "Flavoring agents (to improve taste and palatability).",
         ],
+        category: "Stomach Upsets",
     },
     {
         id: 1,
@@ -45,6 +46,7 @@ const stomachUpsetsData = [
             "Simethicone (optional, for reducing gas and bloating).",
             "Flavoring agents (to improve taste and palatability).",
         ],
+        category: "Stomach Upsets",
     },
     {
         id: 2,
@@ -67,6 +69,7 @@ const stomachUpsetsData = [
             "Aluminum hydroxide (neutralizes stomach acid).",
             "Calcium carbonate (neutralizes stomach acid and provides calcium).",
         ],
+        category: "Stomach Upsets",
     },
     {
         id: 3,
@@ -89,6 +92,7 @@ const stomachUpsetsData = [
             "Magnesium hydroxide (neutralizes stomach acid and acts as a laxative).",
             "Water (solvent for the magnesium hydroxide).",
         ],
+        category: "Stomach Upsets",
     },
     {
         id: 4,
@@ -111,6 +115,7 @@ const stomachUpsetsData = [
             "Excipients such as microcrystalline cellulose and magnesium stearate (in tablets or capsules).",
             "Enteric coating agents (to protect the drug from stomach acid and ensure proper release in the intestines).",
         ],
+        category: "Stomach Upsets",
     },
 ];
 

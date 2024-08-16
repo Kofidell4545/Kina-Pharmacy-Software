@@ -19,6 +19,7 @@ const malariaDrugsData = [
             "Lumefantrine (long-acting antimalarial).",
             "Excipients like microcrystalline cellulose and magnesium stearate (in tablets).",
         ],
+        category: "Malaria Drugs",
     },
     {
         id: 1,
@@ -42,6 +43,7 @@ const malariaDrugsData = [
             "Lumefantrine (long-acting antimalarial).",
             "Excipients like microcrystalline cellulose and magnesium stearate (in tablets).",
         ],
+        category: "Malaria Drugs",
     },
     {
         id: 2,
@@ -64,6 +66,7 @@ const malariaDrugsData = [
             "Lumefantrine (long-acting antimalarial).",
             "Excipients like microcrystalline cellulose and magnesium stearate (in tablets).",
         ],
+        category: "Malaria Drugs",
     },
 ];
 

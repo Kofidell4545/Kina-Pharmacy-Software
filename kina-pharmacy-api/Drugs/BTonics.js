@@ -22,6 +22,7 @@ const bloodTonicsData = [
       "Vitamin B12 (cobalamin).",
       "Vitamin C (ascorbic acid), often included to enhance iron absorption.",
     ],
+    category: "Blood Tonics",
   },
   {
     id: 1,
@@ -47,6 +48,7 @@ const bloodTonicsData = [
       "Essential minerals like iron, zinc, and magnesium.",
       "Herbal extracts (such as ginseng or ginkgo biloba) that may support energy and cognitive function.",
     ],
+    category: "Blood Tonics",
   },
   {
     id: 2,
@@ -68,6 +70,7 @@ const bloodTonicsData = [
       "Vitamin B12 and folic acid (important for red blood cell production).",
       "Herbal ingredients such as ashwagandha or aloe vera, which may support overall health and energy.",
     ],
+    category: "Blood Tonics",
   },
   {
     id: 3,
@@ -89,6 +92,7 @@ const bloodTonicsData = [
       "Vitamin B12 (cobalamin) to support red blood cell formation and energy.",
       "Vitamin C (ascorbic acid) to enhance iron absorption.",
     ],
+    category: "Blood Tonics",
   },
   {
     id: 4,
@@ -113,6 +117,7 @@ const bloodTonicsData = [
       "Vitamin C (ascorbic acid) to improve iron absorption.",
       "Additional vitamins, such as B vitamins, to support overall vitality and health.",
     ],
+    category: "Blood Tonics",
   },
 ];
 
