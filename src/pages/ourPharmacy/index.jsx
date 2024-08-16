@@ -33,10 +33,10 @@ const OurPharmacy = () => {
     fetch('http://localhost:8000/api/drugs/')
       .then(response => response.json())
       .then(data => {
-        console.log("Fetched data:", data); // Check this in the browser console
+        // console.log("Fetched data:", data); // Check this in the browser console
         setAllDrugs(data);
       })
-      .catch(error => console.error('Error fetching data:', error));
+      // .catch(error => console.error('Error fetching data:', error));
   }, []);
   
   
