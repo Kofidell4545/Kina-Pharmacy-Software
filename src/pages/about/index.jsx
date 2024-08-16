@@ -122,12 +122,13 @@ const About = () => {
                 src="https://img.icons8.com/ios-filled/50/1A1A1A/portraits.png"
                 alt="portraits"
               />
-              <h1 className="font-bold">Customer Focus</h1>
+              <h1 className="font-bold">Innovation and Excellence</h1>
               <p className="pb-14">
-                We prioritize the needs and well-being of our customers above
-                all else. By offering personalized care, attentive service, and
-                tailored solutions, we strive to enhance the health and
-                satisfaction of every individual we serve.
+                We are committed to continuous improvement and innovation. By
+                embracing new technologies, methods, and ideas, we strive to
+                deliver the highest quality services and products. Our
+                dedication to excellence ensures that we consistently exceed
+                expectations and set new industry standards.
               </p>
             </div>
             <div className="flex flex-col w-[50%] pt-14 space-y-2">
@@ -137,12 +138,13 @@ const About = () => {
                 src="https://img.icons8.com/ios-filled/50/1A1A1A/portraits.png"
                 alt="portraits"
               />
-              <h1 className="font-bold">Customer Focus</h1>
+              <h1 className="font-bold">Integrity and Transparency</h1>
               <p className="pb-8">
-                We prioritize the needs and well-being of our customers above
-                all else. By offering personalized care, attentive service, and
-                tailored solutions, we strive to enhance the health and
-                satisfaction of every individual we serve.
+                We believe in conducting our business with the utmost integrity
+                and transparency. Our commitment to honesty, ethical practices,
+                and clear communication builds trust with our customers,
+                partners, and communities. We stand by our promises and are
+                accountable for our actions.
               </p>
               <img
                 width="50"
@@ -150,12 +152,13 @@ const About = () => {
                 src="https://img.icons8.com/ios-filled/50/1A1A1A/portraits.png"
                 alt="portraits"
               />
-              <h1 className="font-bold">Customer Focus</h1>
+              <h1 className="font-bold">Teamwork and Collaboration</h1>
               <p className="pb-14">
-                We prioritize the needs and well-being of our customers above
-                all else. By offering personalized care, attentive service, and
-                tailored solutions, we strive to enhance the health and
-                satisfaction of every individual we serve.
+                We recognize that our success is built on the strength of our
+                team. By fostering a collaborative and supportive environment,
+                we empower our employees to work together towards common goals.
+                We value diverse perspectives and encourage open dialogue to
+                create solutions that benefit everyone.
               </p>
             </div>
           </div>
