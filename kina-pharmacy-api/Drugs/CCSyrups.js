@@ -5,8 +5,8 @@ const coughSyrupsData = [
     description:
       "Menthodex Cough Mixture is a medication used to relieve cough and related symptoms. It typically combines various active ingredients, including cough suppressants, expectorants, and soothing agents. The formulation is designed to address both productive and non-productive coughs, easing symptoms and helping to clear mucus from the respiratory tract. It may also contain menthol or other soothing agents to relieve throat irritation.",
     images: [
-      "../assets/DrugImages/Menthodex0.jpg",
-      "../assets/DrugImages/Menthodex1.jpg",
+      "http://localhost:8000/assets/DrugImages/Menthodex0.jpg",
+      "http://localhost:8000/assets/DrugImages/Menthodex1.jpg",
     ],
     inStock: true,
     price: "GHS 40.00",
@@ -29,9 +29,9 @@ const coughSyrupsData = [
     description:
       "Stopkof Cough Syrup is used to treat cough and related respiratory symptoms. It generally contains a combination of active ingredients that work to suppress cough and reduce throat irritation. The syrup may include both cough suppressants and expectorants to manage different types of coughs, whether dry or productive, and can also contain soothing agents to alleviate throat discomfort.",
     images: [
-      "../assets/DrugImages/Stopkof0.jpg",
-      "../assets/DrugImages/Stopkof1.jpg",
-      "../assets/DrugImages/Stopkof2.jpg",
+      "http://localhost:8000/assets/DrugImages/Stopkof0.jpg",
+      "http://localhost:8000/assets/DrugImages/Stopkof1.jpg",
+      "http://localhost:8000/assets/DrugImages/Stopkof2.jpg",
     ],
     inStock: true,
     price: "GHS 27.00",
@@ -54,8 +54,8 @@ const coughSyrupsData = [
     description:
       "Samalin Cough Syrup is formulated to provide relief from cough and related symptoms. It generally combines active ingredients that target both the suppression of cough and the alleviation of throat irritation. The syrup may include cough suppressants, expectorants, and soothing agents to address various types of coughs, whether dry or productive, and to provide comfort to the throat.",
     images: [
-      "../assets/DrugImages/Samalin0.jpg",
-      "../assets/DrugImages/Samalin1.jpg",
+      "http://localhost:8000/assets/DrugImages/Samalin0.jpg",
+      "http://localhost:8000/assets/DrugImages/Samalin1.jpg",
     ],
     inStock: true,
     price: "GHS 17.00",
@@ -78,9 +78,9 @@ const coughSyrupsData = [
     description:
       "Viscof Cough Syrup is an expectorant agent to relieve cough and related respiratory symptoms. It typically combines various active ingredients to address both dry and productive coughs. The formulation may include cough suppressants to reduce the urge to cough, expectorants to help clear mucus from the airways, and soothing agents to ease throat irritation.",
     images: [
-      "../assets/DrugImages/Viscof0.png",
-      "../assets/DrugImages/Viscof1.png",
-      "../assets/DrugImages/Viscof2.png",
+      "http://localhost:8000/assets/DrugImages/Viscof0.png",
+      "http://localhost:8000/assets/DrugImages/Viscof1.png",
+      "http://localhost:8000/assets/DrugImages/Viscof2.png",
     ],
     inStock: true,
     price: "GHS 55.00",
@@ -103,8 +103,8 @@ const coughSyrupsData = [
     description:
       "Koffex Cough Syrup is formulated to alleviate cough and related respiratory discomforts. It generally includes a combination of active ingredients that work to suppress cough reflex, reduce throat irritation, and assist in mucus clearance. The syrup may contain both cough suppressants and expectorants, making it effective for treating various types of coughs.",
     images: [
-      "../assets/DrugImages/Koffex0.png",
-      "../assets/DrugImages/Koffex1.png",
+      "http://localhost:8000/assets/DrugImages/Koffex0.png",
+      "http://localhost:8000/assets/DrugImages/Koffex1.png",
     ],
     inStock: true,
     price: "GHS 17.00",
@@ -126,7 +126,9 @@ const coughSyrupsData = [
     drugName: "Kofof",
     description:
       "Kofof Cough Syrup is designed to relieve symptoms associated with coughs and respiratory discomfort. It typically contains a combination of active ingredients that address both dry and productive coughs. The syrup may include cough suppressants to reduce the urge to cough, expectorants to help clear mucus, and soothing agents to ease throat irritation.",
-    images: ["../assets/DrugImages/Kofof0.webp"],
+    images: [
+      "http://localhost:8000/assets/DrugImages/Kofof0.webp",
+    ],
     inStock: true,
     price: "GHS 20.00",
     uses: [
