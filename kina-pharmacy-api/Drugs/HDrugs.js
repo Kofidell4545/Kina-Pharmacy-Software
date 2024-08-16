@@ -1,4 +1,4 @@
-const HerbalDrugsData = [
+const herbalDrugsData = [
     {
         id: 0,
         drugName: "Rooter Mixture",
@@ -153,4 +153,4 @@ const HerbalDrugsData = [
     },
 ];
 
-export default HerbalDrugsData
+module.exports = herbalDrugsData;
