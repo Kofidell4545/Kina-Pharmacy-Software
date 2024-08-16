@@ -1,4 +1,4 @@
-const StomachUpsetsData = [
+const stomachUpsetsData = [
     {
         id: 0,
         drugName: "Nugel",
@@ -114,4 +114,4 @@ const StomachUpsetsData = [
     },
 ];
 
-export default StomachUpsetsData;
+module.exports = stomachUpsetsData;

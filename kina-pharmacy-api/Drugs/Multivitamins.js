@@ -1,4 +1,4 @@
-const MultivitaminsData = [
+const multivitaminsData = [
     {
         id: 0,
         drugName: "Apetamin",
@@ -119,4 +119,4 @@ const MultivitaminsData = [
     },
 ];
 
-export default MultivitaminsData;
+module.exports = multivitaminsData;

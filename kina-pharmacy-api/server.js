@@ -2,22 +2,32 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
+// Importing drugs data from categories
+const herbalDrugsData = require("./Drugs/HDrugs");
+const malariaDrugsData = require("./Drugs/MDrugs");
+const multivitaminsData = require("./Drugs/Multivitamins");
+const stomachUpsetsData = require("./Drugs/SUpsets");
+
 // Middleware to parse JSON bodies
 app.use(express.json());
 
-// Routes
+// Drug Routes
 app.get("/api/drugs", (req, res) => {
-  res.json(drugs);
+    const allDrugs = [ ...herbalDrugsData, ...malariaDrugsData, ...multivitaminsData, stomachUpsetsData ]
+    res.json(allDrugs);
 });
 
+
+// Routes to get drugs by their id
 app.get("/api/drugs/:id", (req, res) => {
-  const drugId = parseInt(req.params.id);
-  const drug = drugs.find((d) => d.id === drugId);
-  if (drug) {
-    res.json(drug);
-  } else {
-    res.status(404).json({ message: "Drug not found" });
-  }
+    const drugId = parseInt(req.params.id);
+    const allDrugs = [...herbalDrugsData, ...malariaDrugsData, ...multivitaminsData, stomachUpsetsData];
+    const drug = allDrugs.find((d) => d.id === drugId);
+    if (drug) {
+      res.json(drug);
+    } else {
+      res.status(404).json({ message: "Drug not found" });
+    }
 });
 
 app.listen(port, () => {

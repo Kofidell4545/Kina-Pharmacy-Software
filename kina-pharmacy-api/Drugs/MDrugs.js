@@ -1,4 +1,4 @@
-const MalariaDrugsData = [
+const malariaDrugsData = [
     {
         id: 0,
         drugName: "Lufart DS",
@@ -67,4 +67,4 @@ const MalariaDrugsData = [
     },
 ];
 
-export default MalariaDrugsData;
+module.exports = malariaDrugsData;
