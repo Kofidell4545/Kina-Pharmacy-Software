@@ -25,7 +25,6 @@ const antibioticsData = [
     drugName: "Tetracycline",
     description:
       "Tetracycline is a broad-spectrum antibiotic that is effective against a wide variety of bacterial infections. It works by inhibiting protein synthesis in bacteria, thereby preventing their growth and reproduction. Tetracycline is commonly used to treat acne, respiratory tract infections, urinary tract infections, and certain sexually transmitted infections. It is available in the form of capsules, tablets, and topical preparations.",
-    image0: Tetracycline0,
     images: ["../assets/DrugImages/Tetracycline0.jpg"],
     inStock: true,
     price: "GHS 4.00",
