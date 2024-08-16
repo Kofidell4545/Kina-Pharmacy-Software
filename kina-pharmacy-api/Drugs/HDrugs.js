@@ -117,7 +117,7 @@ const herbalDrugsData = [
         description: "Mighty Power is a dietary supplement formulated to support overall health and enhance physical performance. It typically contains a blend of vitamins, minerals, and herbal ingredients designed to boost energy, stamina, and vitality. The supplement is aimed at improving general well-being, increasing endurance, and supporting overall health.",
         images: [
             "http://localhost:8000/assets/DrugImages/Mighty0.png",
-            "http://localhost:8000/assets/DrugImages/Might1.jpg",
+            "http://localhost:8000/assets/DrugImages/Mighty1.jpg",
         ],
         inStock: true,
         price: "GHS 40.00",
