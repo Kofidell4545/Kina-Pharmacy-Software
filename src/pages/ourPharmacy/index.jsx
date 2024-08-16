@@ -181,7 +181,7 @@ const OurPharmacy = () => {
                 <div className="box1" key={drug.id}>
                   <div className="img-name-avail-box">
                     <div className="recommended-img-div">
-                      <img src={drug.images} alt={drug.drugName} />
+                      <img src={drug.images[0]} alt={drug.drugName} />
                     </div>
                     <div className="drug-name">
                       <span>{drug.drugName}</span> <br />
