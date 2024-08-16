@@ -88,7 +88,7 @@ const antibioticsData = [
     drugName: "Chloramphenicol",
     description:
       "Chloramphenicol is a broad-spectrum antibiotic that is effective against a variety of bacterial infections. It works by inhibiting bacterial protein synthesis, which prevents the bacteria from growing and reproducing. Chloramphenicol is often reserved for serious infections when other antibiotics are ineffective due to its potential for severe side effects. It is used to treat conditions such as typhoid fever, meningitis, and eye infections. Chloramphenicol is available in oral, intravenous, and topical forms.",
-    images: [],
+    images: ["../assets/DrugImages/Chloramphenicol0.webp"],
     inStock: true,
     price: "GHS 7.00",
     uses: [
