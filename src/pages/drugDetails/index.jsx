@@ -1,49 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
 // Styles import
-import "./styles.css"
-
-// Import your data
-import AntibioticsData from '../ourPharmacy/Drugs/Antibiotics';
-import BloodTonicsData from '../ourPharmacy/Drugs/BTonics';
-import CoughSyrupsData from '../ourPharmacy/Drugs/CCSyrups';
-import DewormersData from '../ourPharmacy/Drugs/Dewormers';
-import HerbalDrugsData from '../ourPharmacy/Drugs/HDrugs';
-import MalariaDrugsData from '../ourPharmacy/Drugs/MDrugs';
-import MultivitaminsData from '../ourPharmacy/Drugs/Multivitamins';
-import StomachUpsetsData from '../ourPharmacy/Drugs/SUpsets';
+import "./styles.css";
 
 const DrugDetails = () => {
-  const { id, category } = useParams();
+  const { id, category } = useParams(); // Get id and category from URL
   const [selectedImage, setSelectedImage] = useState(null);
+  const [allDrugs, setAllDrugs] = useState([]);
 
-  const getDrugsByCategory = (category) => {
-    switch (category) {
-      case 'Antibiotics':
-        return AntibioticsData;
-      case 'Blood Tonics':
-        return BloodTonicsData;
-      case 'Cough And Cold Syrups':
-        return CoughSyrupsData;
-      case 'Dewormers':
-        return DewormersData;
-      case 'Herbal Drugs':
-        return HerbalDrugsData;
-      case 'Malaria Drugs':
-        return MalariaDrugsData;
-      case 'Multivitamins':
-        return MultivitaminsData;
-      case 'Stomach Upsets':
-        return StomachUpsetsData;
-      default:
-        return [];
-    }
-  };
+  // Fetch drugs from the API
+  useEffect(() => {
+    fetch('http://localhost:8000/api/drugs/')
+      .then(response => response.json())
+      .then(data => {
+        console.log("Fetched data:", data); // Check this in the browser console
+        setAllDrugs(data);
+      })
+      .catch(error => console.error('Error fetching data:', error));
+  }, []);
 
-  const drugs = getDrugsByCategory(category);
-  const drug = drugs.find(d => d.id === parseInt(id));
-  const defaultImage = drug ? drug.image0 || drug.image1 || drug.image2 : null;
+  // Find the specific drug based on the ID and category from the URL
+  const drug = allDrugs.find(d => d.id === parseInt(id) && d.category === category);
+  const defaultImage = drug ? drug.images[0] : null;
 
   if (!drug) {
     return <div>Drug not found</div>;
@@ -52,7 +31,6 @@ const DrugDetails = () => {
   return (
     <div className="drug-details">
       <div className="drug-details-content">
-
         <div className="drug-info-section">
           <div className="drug-main-info">
             <h1>{drug.drugName}</h1>
@@ -67,38 +45,18 @@ const DrugDetails = () => {
             <div className="thumbnail-images">
               <table>
                 <tbody>
-                <tr>
-                  <td>
-                    {drug.image0 && (
-                      <img
-                        src={drug.image0}
-                        alt={`${drug.drugName} Thumbnail 1`}
-                        onClick={() => setSelectedImage(drug.image0)}
-                        className={selectedImage === drug.image0 ? 'selected-thumbnail' : ''}
-                      />
-                    )}
-                  </td>
-                  <td>
-                    {drug.image1 && (
-                      <img
-                        src={drug.image1}
-                        alt={`${drug.drugName} Thumbnail 2`}
-                        onClick={() => setSelectedImage(drug.image1)}
-                        className={selectedImage === drug.image1 ? 'selected-thumbnail' : ''}
-                      />
-                    )}
-                  </td>
-                  <td>
-                    {drug.image2 && (
-                      <img
-                        src={drug.image2}
-                        alt={`${drug.drugName} Thumbnail 3`}
-                        onClick={() => setSelectedImage(drug.image2)}
-                        className={selectedImage === drug.image2 ? 'selected-thumbnail' : ''}
-                      />
-                    )}
-                  </td>
-                </tr>
+                  <tr>
+                    {drug.images.map((image, index) => (
+                      <td key={index}>
+                        <img
+                          src={image}
+                          alt={`${drug.drugName} Thumbnail ${index + 1}`}
+                          onClick={() => setSelectedImage(image)}
+                          className={selectedImage === image ? 'selected-thumbnail' : ''}
+                        />
+                      </td>
+                    ))}
+                  </tr>
                 </tbody>
               </table>
             </div>
