@@ -40,14 +40,15 @@ Follow these steps to get the project up and running on your local machine:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/username/kina-pharmacy.git
-   cd kina-pharmacy
+   git clone https://github.com/Kofidell4545/Kina-Pharmacy-Software.git
    ```
 
 2. **Install dependencies:**
 
    ```bash
    npm install
+   or
+   yarn install
    ```
 
 3. **Set up environment variables:**
@@ -71,29 +72,30 @@ Follow these steps to get the project up and running on your local machine:
 ## 🖼 Screenshots
 
 - **Home Page:**
-  ![Home Page](../Kina-Pharmacy-Software/./kina-pharmacy-api/assets/DrugImages/home1.png)
 
-  ![Home Page](../Kina-Pharmacy-Software/./kina-pharmacy-api/assets/DrugImages/home2.png)
+  ![Home Page](/kina-pharmacy-api/assets/Screenshot/home1.png)
 
-  ![Home Page](../Kina-Pharmacy-Software/./kina-pharmacy-api/assets/DrugImages/home3.png)
+  ![Home Page](/kina-pharmacy-api/assets/Screenshot/home2.png)
 
-  ![Home Page](../Kina-Pharmacy-Software/./kina-pharmacy-api/assets/DrugImages/home4.png)
+  ![Home Page](/kina-pharmacy-api/assets/Screenshot/home3.png)
 
-  ![Home Page](../Kina-Pharmacy-Software/./kina-pharmacy-api/assets/DrugImages/home5.png)
+  ![Home Page](/kina-pharmacy-api/assets/Screenshot/home4.png)
 
-  ![Home Page](../Kina-Pharmacy-Software/./kina-pharmacy-api/assets/DrugImages/home6.png)
+  ![Home Page](/kina-pharmacy-api/assets/Screenshot/home5.png)
 
-  ![Home Page](../Kina-Pharmacy-Software/./kina-pharmacy-api/assets/DrugImages/footer%20our%20pharmacy.png)
+  ![Home Page](/kina-pharmacy-api/assets/Screenshot/home6.png)
+
+  ![Home Page](/kina-pharmacy-api/assets/Screenshot/footer%20our%20pharmacy.png)
 
 - **Our Pharmacy:**
-  ![Product Details](../Kina-Pharmacy-Software/./kina-pharmacy-api/assets/DrugImages/our%20pharmacy1.png)
+  ![Product Details](/kina-pharmacy-api/assets/Screenshot/our%20pharmacy1.png)
 
-  ![Product Details](../Kina-Pharmacy-Software/./kina-pharmacy-api/assets/DrugImages/our%20pharmacy2.png)
+  ![Product Details](/kina-pharmacy-api/assets/Screenshot/our%20pharmacy2.png)
 
 - **Contact Us:**
-  ![Drug Recommendation](../Kina-Pharmacy-Software/./kina-pharmacy-api/assets/DrugImages/contact.png)
+  ![Drug Recommendation](/kina-pharmacy-api/assets/Screenshot/)
 
-  ![Drug Recommendation](../Kina-Pharmacy-Software/./kina-pharmacy-api/assets/DrugImages/footer%20our%20pharmacy.png)
+  ![Drug Recommendation](/kina-pharmacy-api/assets/Screenshot/)
 
 ## 🤝 Contributing
 
