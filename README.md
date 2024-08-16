@@ -72,6 +72,10 @@ Follow these steps to get the project up and running on your local machine:
 ## 🖼 Screenshots
 
 - **Home Page:**
+<<<<<<< HEAD
+=======
+  ![Home Page](/kina-pharmacy-api/assets/Screenshot/home1.png)
+>>>>>>> bf0dcd77e31aec33fa13be65b2f255c4417f802a
 
   ![Home Page](/kina-pharmacy-api/assets/Screenshot/home1.png)
 
