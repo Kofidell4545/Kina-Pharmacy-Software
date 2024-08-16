@@ -16,14 +16,13 @@ const dewormersData = require("./Drugs/Dewormers");
 // Middleware to parse JSON bodies
 app.use(cors());
 
-
 // Drug Routes
 app.get("/api/drugs", (req, res) => {
   const allDrugs = [
     ...herbalDrugsData,
     ...malariaDrugsData,
     ...multivitaminsData,
-    ...stomachUpsetsData, // Add the spread operator here
+    ...stomachUpsetsData,
     ...antibioticsData,
     ...bloodTonicsData,
     ...coughSyrupsData,
@@ -33,6 +32,47 @@ app.get("/api/drugs", (req, res) => {
   res.json(allDrugs);
 });
 
+// Route to get herbal drugs
+app.get("/api/drugs/herbal", (req, res) => {
+    res.json(herbalDrugsData);
+});
+
+// Route to get malaria drugs
+app.get("/api/drugs/malaria", (req, res) => {
+    res.json(malariaDrugsData);
+});
+
+// Route to get multivitamin drugs
+app.get("/api/drugs/multivitamins", (req, res) => {
+    res.json(multivitaminsData);
+});
+
+// Route to get stomach upset drugs
+app.get("/api/drugs/stomachupsets", (req, res) => {
+    res.json(stomachUpsetsData);
+});
+
+// Route to get antibiotics drugs
+app.get("/api/drugs/antibiotics", (req, res) => {
+    res.json(antibioticsData);
+});
+
+// Route to get blood tonic drugs
+app.get("/api/drugs/bloodtonics", (req, res) => {
+    res.json(bloodTonicsData);
+});
+
+// Route to get cough syrups drugs
+app.get("/api/drugs/cough-cold-syrups", (req, res) => {
+    res.json(coughSyrupsData);
+});
+
+// Route to get dewormer drugs
+app.get("/api/drugs/dewormer", (req, res) => {
+    res.json(dewormersData);
+});
+  
+
 // Routes to get drugs by their id
 app.get("/api/drugs/:id", (req, res) => {
   const drugId = parseInt(req.params.id);
@@ -40,7 +80,7 @@ app.get("/api/drugs/:id", (req, res) => {
     ...herbalDrugsData,
     ...malariaDrugsData,
     ...multivitaminsData,
-    ...stomachUpsetsData, // Add the spread operator here
+    ...stomachUpsetsData,
     ...antibioticsData,
     ...bloodTonicsData,
     ...coughSyrupsData,
