@@ -1,6 +1,8 @@
 import React from "react";
-import { Helmet } from 'react-helmet';
-
+import { Helmet } from "react-helmet";
+import profile from "../../assets/KINA PHARMACY PROFILE IMG.webp";
+import CEO from "../../assets/CEO IMG.jpeg";
+import welcome from "../../assets/ABOUT IMG.jpg";
 
 const About = () => {
   return (
@@ -27,10 +29,7 @@ const About = () => {
       <section className="xl:mb-20 mb-10 xl:px-14 px-4 items-center content-center justify-center">
         <div className="w-full flex flex-col xl:flex-row-reverse items-center xl:mt-10 md:gap-8 py-12 xl:py-0">
           <div className="flex justify-center xl:w-[50%] w-full xl:h-[600px] h-auto xl:px-0 px-4">
-            <img
-              className="object-cover w-full h-full"
-              src="https://www.shutterstock.com/image-photo/healthcare-pharmacist-woman-counter-medicine-600nw-2266047379.jpg"
-            />
+            <img className="object-contain w-full h-full" src={welcome} />
           </div>
           <div className="w-full xl:w-[50%] flex flex-col items-center xl:items-start space-y-5 px-4 xl:px-0">
             <h2 className="w-full text-2xl xl:text-5xl font-bold xl:mt-0 mt-4">
@@ -59,11 +58,11 @@ const About = () => {
             <div className="flex flex-row md:flex-col space-x-8 xl:space-x-0 xl:space-y-4">
               <div className="flex flex-wrap space-x-6 xl:space-x-40 ">
                 <div className="flex flex-col space-y-3 mt-6 ">
-                  <div className="text-2xl md:text-4xl font-bold">$30m</div>
+                  <div className="text-2xl md:text-4xl font-bold">GHS300</div>
                   <div className="text-xs md:text-base">Customer savings</div>
                 </div>
                 <div className="flex flex-col space-y-3 mt-6">
-                  <div className="text-2xl md:text-4xl font-bold">10m+</div>
+                  <div className="text-2xl md:text-4xl font-bold">2m+</div>
                   <div className="text-xs md:text-base">Hours saved</div>
                 </div>
               </div>
@@ -175,19 +174,20 @@ const About = () => {
           <div className="w-[100%] flex flex-col sm:flex-row-reverse gap-16 mb-16">
             <div className="sm:w-[50%] w-[100%] flex flex-row space-x-8 ">
               <div className="sm:h-[330px] h-auto w-[50%]">
-                <img
-                  className="object-cover w-full h-full"
-                  src="https://www.shutterstock.com/image-photo/healthcare-pharmacist-woman-counter-medicine-600nw-2266047379.jpg"
-                />
+                <img className="object-cover w-full h-full" src={CEO} />
               </div>
               <div className="flex flex-col w-[50%] space-y-2 ">
                 <div className=" flex flex-col w-[100%] ">
                   <div className="space-y-4">
-                    <h1 className="text-2xl font-bold">Full name</h1>
-                    <h2>Job title</h2>
+                    <h1 className="text-2xl font-bold">
+                      Abdul Warith Abdul Rashid
+                    </h1>
+                    <h2>CEO</h2>
                     <p>
-                      efekfj t34tl43jt4 t43t43t 34tt43t43t4 t434t4 grtfr g0gerg
-                      t 43 t34t4t43t43t gregwefewf efgreg
+                      Abdul Warith Abdul Rashid is the visionary CEO of Kina
+                      Pharmacy, a leading provider of quality healthcare
+                      products and services, dedicated to enhancing community
+                      well-being through innovation and personalized care.
                     </p>
                   </div>
                   <div className="flex flex-row space-x-3 mt-10">
@@ -222,19 +222,20 @@ const About = () => {
 
             <div className="sm:w-[50%] w-[100%] flex flex-row space-x-8 ">
               <div className="sm:h-[330px] h-auto w-[50%]">
-                <img
-                  className="object-cover w-full h-full"
-                  src="https://www.shutterstock.com/image-photo/healthcare-pharmacist-woman-counter-medicine-600nw-2266047379.jpg"
-                />
+                <img className="object-cover w-full h-full" src={profile} />
               </div>
               <div className="flex flex-col w-[50%] space-y-2 ">
                 <div className=" flex flex-col w-[100%] ">
                   <div className="space-y-5">
-                    <h1 className="text-2xl font-bold">Full name</h1>
-                    <h2>Job title</h2>
+                    <h1 className="text-2xl font-bold">
+                      Dr. Junaid Abdul Rashid
+                    </h1>
+                    <h2>Pharmacist</h2>
                     <p>
-                      efekfj t34tl43jt4 t43t43t 34tt43t43t4 t434t4 grtfr g0gerg
-                      t 43 t34t4t43t43t gregwefewf efgreg
+                      Dr. Junaid Abdul Rashid is the dedicated pharmacist at
+                      Kina Pharmacy, committed to delivering expert care and
+                      personalized medication solutions to enhance the health
+                      and well-being of the community
                     </p>
                   </div>
                   <div className="flex flex-row space-x-3 mt-10">
@@ -271,19 +272,20 @@ const About = () => {
           <div className="w-[100%] flex flex-col sm:flex-row-reverse gap-16 mb-16">
             <div className="sm:w-[50%] w-[100%] flex flex-row space-x-8">
               <div className="sm:h-[330px] h-auto w-[50%]">
-                <img
-                  className="object-cover w-full h-full"
-                  src="https://www.shutterstock.com/image-photo/healthcare-pharmacist-woman-counter-medicine-600nw-2266047379.jpg"
-                />
+                <img className="object-cover w-full h-full" src={profile} />
               </div>
               <div className="flex flex-col w-[50%] space-y-2 ">
                 <div className=" flex flex-col w-[100%] ">
                   <div className="space-y-5">
-                    <h1 className="text-2xl font-bold">Full name</h1>
-                    <h2>Job title</h2>
+                    <h1 className="text-2xl font-bold">
+                      Nuru'ain Abdul Rashid
+                    </h1>
+                    <h2>Manager</h2>
                     <p>
-                      efekfj t34tl43jt4 t43t43t 34tt43t43t4 t434t4 grtfr g0gerg
-                      t 43 t34t4t43t43t gregwefewf efgreg
+                      Nuru'ain Abdul Rashid is the efficient and resourceful
+                      manager of Kina Pharmacy, ensuring smooth operations and
+                      exceptional customer service while driving the team
+                      towards excellence in healthcare delivery
                     </p>
                   </div>
                   <div className="flex flex-row space-x-3 mt-10">
@@ -318,19 +320,19 @@ const About = () => {
 
             <div className="sm:w-[50%] w-[100%] flex flex-row space-x-8">
               <div className="sm:h-[330px] h-auto w-[50%]">
-                <img
-                  className="object-cover w-full h-full"
-                  src="https://www.shutterstock.com/image-photo/healthcare-pharmacist-woman-counter-medicine-600nw-2266047379.jpg"
-                />
+                <img className="object-cover w-full h-full" src={profile} />
               </div>
               <div className="flex flex-col w-[50%] space-y-2 ">
                 <div className=" flex flex-col w-[100%] ">
                   <div className="space-y-5">
-                    <h1 className="text-2xl font-bold">Full name</h1>
-                    <h2>Job title</h2>
+                    <h1 className="text-2xl font-bold">Khidr Abdul Rashid</h1>
+                    <h2>MCA</h2>
                     <p>
-                      efekfj t34tl43jt4 t43t43t 34tt43t43t4 t434t4 grtfr g0gerg
-                      t 43 t34t4t43t43t gregwefewf efgreg
+                      Khidr Abdul Rashid is the attentive and knowledgeable
+                      Medical Counter Assistant (MCA) at Kina Pharmacy, focused
+                      on providing excellent customer support and ensuring
+                      patients receive the right guidance for their healthcare
+                      needs.
                     </p>
                   </div>
                   <div className="flex flex-row space-x-3 mt-10">
