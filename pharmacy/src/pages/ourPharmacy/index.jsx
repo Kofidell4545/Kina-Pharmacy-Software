@@ -30,7 +30,7 @@ const OurPharmacy = () => {
 
   // Fetch drugs from the API
   useEffect(() => {
-    fetch('http://localhost:8000/api/drugs/')
+    fetch('https://pharmacy-api-1u0w.onrender.com/api/drug-routes/')
       .then(response => response.json())
       .then(data => {
         // console.log("Fetched data:", data); // Check this in the browser console
