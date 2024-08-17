@@ -1,9 +1,9 @@
 .logo {
-    width: 100px;
-    height: 90px;
+    width: 150px;
+    height: 78px;
 }
 .text-black:hover {
-    color: #7a7a7a;
+    color: #abc3a2;
 }
 
 @media only screen and (max-width: 768px) {

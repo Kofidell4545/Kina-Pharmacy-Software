@@ -5,7 +5,7 @@ import { Link, NavLink } from 'react-router-dom';
 import "./styles.css";
 
 // Logo import
-import logo from "../../assets/utils/logo.png";
+import logo from "../../assets/utils/kina-logo.png";
 
 
 const Navbar = () => {
