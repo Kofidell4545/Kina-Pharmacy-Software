@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
+
 
 // Styles import
 import "./styles.css";
@@ -30,6 +32,9 @@ const DrugDetails = () => {
 
   return (
     <div className="drug-details">
+      <Helmet>
+        <title>Drug Details</title>
+      </Helmet>
       <div className="drug-details-content">
         <div className="drug-info-section">
           <div className="drug-main-info">

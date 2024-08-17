@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from 'react-helmet';
 import male from "../../assets/male.png";
 import malaria from "../../assets/malaria.png";
 import menstral from "../../assets/menstral.png";
@@ -28,6 +29,9 @@ const education = [
 const Education = () => {
   return (
     <main className="flex flex-col min-h-screen bg-white">
+      <Helmet>
+        <title>Education</title>
+      </Helmet>
       <div
         className="pt-16 flex flex-col justify-center items-center mx-auto"
         style={{ width: "100%", maxWidth: 763 }}
