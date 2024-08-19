@@ -59,7 +59,7 @@ const Home = () => {
         <title>Home - Kina Pharmacy</title>
       </Helmet>
       <div
-        className="relative h-[486px] bg-cover bg-center"
+        className="relative h-[330px] bg-cover bg-center"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col justify-start items-start p-14 pl-20">
@@ -297,7 +297,7 @@ const Home = () => {
       </div>
 
       <div className="flex flex-col md:flex-row justify-evenly m-10">
-        <div className="mb-5 md:mb-0">
+        <div className="style={{ width: 300 }} mb-5 md:mb-0">
           <p className="text-[#D64779] font-bold">Why Us</p>
         </div>
         <div>
