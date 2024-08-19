@@ -144,7 +144,7 @@ const Contact = () => {
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            className="object-cover h-full w-full"
+            className="object-cover h-[300px] sm:h-[400px]"
           ></iframe>
         </div>
       </form>
