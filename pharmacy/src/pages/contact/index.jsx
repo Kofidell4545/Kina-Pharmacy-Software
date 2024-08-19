@@ -32,7 +32,7 @@ const Contact = () => {
     setStatus("Submitting...");
 
     try {
-      const response = await fetch("https://pharmacy-api-1u0w.onrender.com/api/contact", {
+      const response = await fetch("https://pharmacy-api-1u0w.onrender.com/api/contact/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
