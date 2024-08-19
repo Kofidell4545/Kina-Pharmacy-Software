@@ -10,7 +10,7 @@ const About = () => {
       <Helmet>
         <title>About Us</title>
       </Helmet>
-      <div className="relative flex flex-col sm:flex-row bg-purple-700">
+      <div className="relative flex flex-col bg-purple-700">
         <img
           className="h-[300px] sm:h-[400px] w-full object-cover"
           src="https://globalnews.ca/wp-content/uploads/2022/12/pharmacy-canada-prescription-drugs.jpg?quality=85&strip=all&w=1200"
@@ -18,11 +18,11 @@ const About = () => {
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="absolute inset-0 flex flex-col items-center justify-center space-y-1 px-4 sm:px-0">
           <p className="text-2xl sm:text-5xl font-bold text-white">About Us</p>
-          <p className="text-base sm:text-lg text-center text-white mx-4 sm:mx-80">
+          <div ><p className="text-base sm:text-lg text-center text-white mx-4 2xl:mx-80">
             Our mission is to provide you with a seamless and informative
             pharmacy experience. At Kina pharmacy, your health and satisfaction
             are our top priorities.
-          </p>
+          </p></div>
         </div>
       </div>
 
