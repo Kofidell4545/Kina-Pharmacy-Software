@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet";
 
 import backgroundImage from "../../assets/background.jpg";
 import { BsTruck } from "react-icons/bs";
@@ -56,8 +56,8 @@ const Home = () => {
   return (
     <main className="flex flex-col min-h-screen bg-white">
       <Helmet>
-          <title>Home - Kina Pharmacy</title>
-        </Helmet>
+        <title>Home - Kina Pharmacy</title>
+      </Helmet>
       <div
         className="relative h-[330px] bg-cover bg-center"
         style={{ backgroundImage: `url(${backgroundImage})` }}
@@ -369,7 +369,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div style={{ width: 400 }} className="rounded-xl mt-5 md:mt-0">
+        <div style={{ width: 300 }} className="rounded-xl mt-5 md:mt-0">
           <img
             src={whyUs}
             alt="Pharmacist"
@@ -403,18 +403,15 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="flex flex-row p-20 justify-between">
-        <div>
+      <div className="flex flex-col md:flex-row p-20 justify-between">
+        <div style={{ gap: 10 }}>
           {/**Image */}
-          <div className="relative rounded-2xl  ">
-            <div className=" rounded-2xl ">
-              <img src={drug} alt="drug" className=" rounded-2xl " />
-            </div>
-            <div className="bg-[#1364FF]  absolute top-10 right-10 p-3 rounded-full ">
-              <FaArrowRightLong className="text-white " size={24} />
+          <div className="relative rounded-2xl">
+            <div className="rounded-2xl">
+              <img src={drug} alt="drug" className="rounded-2xl" />
             </div>
           </div>
-          {/**Text below the image  */}
+          {/**Text below the image */}
           <div className="flex flex-row">
             <div>
               <p className="font-semibold text-[20px]">01/</p>
@@ -431,15 +428,12 @@ const Home = () => {
         {/**Second image */}
         <div>
           {/**Image */}
-          <div className="relative rounded-2xl  ">
-            <div className=" rounded-2xl ">
-              <img src={nurse} alt="nurse" className=" rounded-2xl " />
-            </div>
-            <div className="bg-[#1364FF]  absolute top-10 right-10 p-3 rounded-full ">
-              <FaArrowRightLong className="text-white " size={24} />
+          <div className="relative rounded-2xl">
+            <div className="rounded-2xl">
+              <img src={nurse} alt="nurse" className="rounded-2xl" />
             </div>
           </div>
-          {/**Text below the image  */}
+          {/**Text below the image */}
           <div className="flex flex-row">
             <div>
               <p className="font-semibold text-[20px]">03/</p>
@@ -448,7 +442,7 @@ const Home = () => {
               <p className="font-semibold text-[20px]">Health Consultations</p>
               <p style={{ width: 278 }} className="text-[#7A7A7A]">
                 One-on-one consultations with our pharmacists to discuss your
-                medications, health concerns, and any questions you may have
+                medications, health concerns, and any questions you may have.
               </p>
             </div>
           </div>
