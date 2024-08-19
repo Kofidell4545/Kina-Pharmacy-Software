@@ -2,7 +2,7 @@ import React from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css'; // Import Font Awesome CSS
 
 const WhatsAppButton = () => {
-  const phoneNumber = "233502319686"; // Pharmacist's WhatsApp number
+  const phoneNumber = "233500320720"; // Pharmacist's WhatsApp number
   const message = "Hello, I need assistance with a medication."; // Predefined message
 
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
