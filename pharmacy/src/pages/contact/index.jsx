@@ -62,7 +62,24 @@ const Contact = () => {
       <Helmet>
         <title>Contact Us</title>
       </Helmet>
-      <form onSubmit={handleSubmit} className="flex sm:flex-row flex-col sm:px-14 px-4 my-10 w-full h-auto">
+      <div className="relative flex flex-col sm:flex-row bg-purple-700">
+        <img className="h-[330px] w-full object-fill" src="/Far.jpg" />
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="absolute inset-0 flex flex-col items-center justify-center space-y-1 px-4 sm:px-0">
+          <p className="text-2xl sm:text-5xl font-bold text-white">About Us</p>
+          <p className="text-base sm:text-lg text-center text-white mx-4 sm:mx-80">
+            Help us by sharing your feedback and suggestions. Together we'll
+            create a healthier future.
+          </p>
+        </div>
+      </div>
+      <Helmet>
+        <title>Contact Us</title>
+      </Helmet>
+      <form
+        onSubmit={handleSubmit}
+        className="flex sm:flex-row flex-col sm:px-14 px-4 my-10 w-full h-auto"
+      >
         <div className="w-full sm:w-[50%] py-10 flex flex-col">
           <h1 className="sm:text-5xl text-2xl mb-6 font-bold sm:text-left text-center">
             Contact Us
@@ -108,7 +125,9 @@ const Contact = () => {
           />
           <button
             type="submit"
-            className={`mt-10 bg-black text-white p-2 sm:w-[10%] w-full hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-700 ${isSubmitting && "opacity-50 cursor-not-allowed"}`}
+            className={`mt-10 bg-black text-white p-2 sm:w-[10%] w-full hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-700 ${
+              isSubmitting && "opacity-50 cursor-not-allowed"
+            }`}
             disabled={isSubmitting}
           >
             {isSubmitting ? "Submitting..." : "Submit"}
