@@ -59,7 +59,7 @@ const Home = () => {
           <title>Home - Kina Pharmacy</title>
         </Helmet>
       <div
-        className="relative h-[486px] bg-cover bg-center"
+        className="relative h-[330px] bg-cover bg-center"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col justify-start items-start p-14 pl-20">
