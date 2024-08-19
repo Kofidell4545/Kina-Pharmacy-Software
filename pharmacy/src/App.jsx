@@ -8,6 +8,7 @@ import Contact from "./pages/contact";
 import Education from "./pages/education";
 import OurPharmacy from "./pages/ourPharmacy";
 import DrugDetails from "./pages/drugDetails";
+import WhatsAppButton from "./components/whatsapp/WhatsAppButton"; // Import WhatsAppButton
 
 const router = createBrowserRouter([
   {
@@ -35,7 +36,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/our-pharmacy/:category/:id",
-        element: <DrugDetails />, // Add the route for DrugDetails
+        element: <DrugDetails />,
       },
       {
         path: "*",
@@ -46,7 +47,12 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <RouterProvider router={router} />
+      <WhatsAppButton /> {/* Add WhatsAppButton to make it appear across all pages */}
+    </>
+  );
 }
 
 export default App;
