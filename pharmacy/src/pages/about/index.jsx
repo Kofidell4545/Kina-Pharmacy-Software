@@ -12,7 +12,7 @@ const About = () => {
       </Helmet>
       <div className="relative flex flex-col sm:flex-row bg-purple-700">
         <img
-          className="relative h-[300px] sm:h-[400px] bg-cover bg-center"
+          className="h-[300px] sm:h-[400px] w-full object-cover"
           src="https://globalnews.ca/wp-content/uploads/2022/12/pharmacy-canada-prescription-drugs.jpg?quality=85&strip=all&w=1200"
         />
         <div className="absolute inset-0 bg-black opacity-50"></div>

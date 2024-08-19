@@ -63,7 +63,7 @@ const Contact = () => {
         <title>Contact Us</title>
       </Helmet>
       <div className="relative flex flex-col sm:flex-row bg-purple-700">
-        <img className="h-[330px] w-full object-fill" src="/Far.jpg" />
+        <img className="h-[300px] sm:h-[400px] w-full object-fill" src="/Far.jpg" />
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="absolute inset-0 flex flex-col items-center justify-center space-y-1 px-4 sm:px-0">
           <p className="text-2xl sm:text-5xl font-bold text-white">About Us</p>
