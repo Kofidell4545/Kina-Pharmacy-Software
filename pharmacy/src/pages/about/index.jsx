@@ -16,7 +16,7 @@ const About = () => {
           src="https://globalnews.ca/wp-content/uploads/2022/12/pharmacy-canada-prescription-drugs.jpg?quality=85&strip=all&w=1200"
         />
         <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="absolute inset-0 flex flex-col items-center justify-center space-y-1 px-4 sm:px-0">
+        <div className="absolute w-[100%] inset-0 flex flex-col items-center justify-center space-y-1 px-4 sm:px-0">
           <p className="text-2xl sm:text-5xl font-bold text-white">About Us</p>
           <p className="text-base sm:text-lg text-center text-white mx-4 sm:mx-80">
             Our mission is to provide you with a seamless and informative
