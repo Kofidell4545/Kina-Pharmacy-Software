@@ -1,0 +1,485 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.pharmacy-header {
+    height: 45vh;
+    background-image: url("../../assets/utils/pharmacy-header-bg.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.pharmacy-header h1 {
+    font-size: 3rem; 
+    font-weight: 900;
+    margin: 0;
+}
+
+.pharmacy-header p {
+    font-size: 1.0rem;
+    margin: 0;
+}
+
+.category-drugs-main {
+    padding: 20px 10px 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.category-drugs-main hr {
+    border: 1px dashed #636363;
+    margin: auto;
+    width: 25%;
+}
+
+.search-filter {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 175px;
+}
+
+.search button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+/* .search button:hover {
+    background-color: #c7debe;
+} */
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    filter: invert(300%);
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.filter span {
+    display: flex;
+    align-items: center;
+    color: #aaa;
+}
+
+.filter button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.filter button img {
+    margin-bottom: -5px;
+}
+
+.category-drug {
+    margin: 20px 0 20px 0;
+    display: flex;
+}
+
+.category-drug .category {
+    background-color: rgb(200, 200, 200);
+    width: 27vh;
+    height: 60vh;
+    padding: 10px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.category-drug h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.category-drug ul li {
+    margin-top: 10px;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.category li.selected-category {
+    background-color: #abc3a2;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.category-drug .drugs {
+    background-color: rgb(235, 235, 235);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100%;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.drugs-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.drug-div {
+    border: 1px solid rgb(230, 230, 230);
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: calc(100% / 5 - 20px);
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.img-div img {
+    width: 100%;
+    height: 120px;
+    padding: 5px 8px;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 5px;
+}
+
+.price-avail-div {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.in-stock {
+    color: green;
+}
+
+.out-of-stock {
+    color: red;
+}
+
+.view-btn {
+    margin-top: 40px;
+}
+
+.view-btn .link {
+    display: inline-block;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 7px 30px;
+    transition: 0.3s ease-in-out;
+}
+
+.view-btn a:hover {
+    background-color: #c4dac0;
+}
+
+.recommended {
+    padding: 20px;
+    background-color: #F4F4F4;
+    margin-top: 20px;
+  }
+  
+  .recommended h1 {
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  /* Flexbox layout for recommended drugs */
+  .recommended-drugs {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  /* Individual drug box */
+  .box1 {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Image and name section */
+  .img-name-avail-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+  }
+
+  .recommended-img-div img {
+    height: 33vh;
+  }
+  
+  .drug-name {
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  /* Components and View button section */
+  .comp-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 55%;
+    background-color: #eaeaea;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .components h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .components ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 14px;
+  }
+  
+  .view-drug {
+    text-align: center;
+    margin: 60px 0 15px 0;
+  }
+  
+  .view-drug .link {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: 2px solid #000;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .view-drug .link:hover {
+    background-color: #c4dac0;
+  }
+  
+
+
+
+
+
+
+
+
+
+/* Responsive Styles */
+@media only screen and (min-width: 992px) and (max-width: 1440px) {
+    .search input {
+        width: 208px;
+    }
+
+    .drugs-grid {
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+    .search input {
+        width: 210px;
+    }
+
+    .drugs-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .drug-div {
+        width: calc(100% / 3 - 15px);
+    }
+
+    .price-avail-div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .view-btn .link {
+        display: inline-block;
+        border: 1px solid #000;
+        border-radius: 5px;
+        padding: 5px 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .recommended-drugs {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .box1 {
+        width: 100%;
+      }
+      
+
+}
+
+@media only screen and (max-width: 768px) {
+    .pharmacy-header {
+        padding: 20px;
+    }
+
+    .pharmacy-header h1 {
+        font-size: 2rem;
+    }
+
+    .pharmacy-header p {
+        font-size: 0.9rem;
+    }
+
+    .category-drugs-main {
+        padding: 10px;
+    }
+
+    .category-drug {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .category-drug .category {
+        width: 100%;
+        border-radius: 10px;
+        height: auto;
+    }
+
+    .category-drug .drugs {
+        width: 100%;
+        margin: 20px 0;
+        border-radius: 10px;
+    }
+
+    .drugs-grid {
+        padding: 0;
+    }
+
+    .drug-div {
+        width: calc(100% / 4 - 15px);
+    }
+
+    .price-avail-div {
+        display: flex;
+        align-items: center;
+        gap:15px;
+    }
+
+    .search-filter {
+        flex-direction: row;
+    }
+
+    .recommended-drugs {
+        padding: 0;
+      }
+
+    .box1 {
+        width: 100%;
+      }
+}
+
+@media only screen and (max-width: 480px) {
+    .category-drug .category {
+        border-radius: 10px;
+        font-size: 0.9rem;
+    }
+
+    .pharmacy-header {
+        height: 39vh;
+    }
+
+    .pharmacy-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .pharmacy-header p {
+        font-size: 0.8rem;
+    }
+
+    .search {
+        width: 180px;
+    }
+    
+    .search input {
+        width: 150px;
+    }
+
+    .search button:active {
+        background-color: #c7debe;
+    }
+
+    .category-drug .drugs {
+        font-size: 0.9rem;
+        border-radius: 10px;
+    }
+
+    .drugs-grid {
+        padding: 0;
+    }
+
+    .drug-div {
+        width: calc(100% / 2 - 10px);
+    }
+
+    .img-div img {
+        height: 80px;
+    }
+
+    .view-btn {
+        margin: 40px 0 5px 0;
+    }
+
+    .view-btn a {
+        padding: 5px 10px;
+    }
+
+    .recommended-drugs {
+        padding: 0;
+      }
+
+    .box1 {
+        width: 100%;
+      }
+}
